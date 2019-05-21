@@ -19,7 +19,73 @@ Redux主要的三大点：
 下面通过实例来学习运用
 
 # TODO-WITH-UNDO
-UNDO 是一个很重要的功能，有很多种实现的方法，目前用的比较广的就是在数据层做，和每一个方法都支持undo方法
+UNDO 是一个很重要的功能，有很多种实现的方法:
+- 数据层处理（MVC都是数据驱动View层，数据改变、回滚，就可以做出undo效果，缺点是能做的有限）
+- 在写方法的时候都实现一套undo（代码改动量比较大）
+- 用链表或者栈构建一套时序体系
+- ... ...
+
+> Vuex做undo很不友好，数据不是唯一的（不具备不可变性），这就导致了无法准确的收集到每次改变
+
+来看看Redux的实现逻辑吧,上代码！
+
+```javascript
+//action
+let nextTodoId = 0
+export const addTodo = (text) => ({type: 'ADD_TODO',id: nextTodoId++,text})
+export const setVisibilityFilter = (filter) => ({type: 'SET_VISIBILITY_FILTER',filter})
+export const toggleTodo = (id) => ({type: 'TOGGLE_TODO',id})
+```
+这个action就四行代码，总共3个action，分别是*addTodo*、*setVisibilityFilter*、*toggleTodo*。作用和名字应该差不多<br/>
+```javascript
+//reducer
+import undoable, { distinctState } from 'redux-undo'
+
+const todo = (state, action) => {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return {
+        id: action.id,
+        text: action.text,
+        completed: false
+      }
+    case 'TOGGLE_TODO':
+      if (state.id !== action.id) {
+        return state
+      }
+
+      return {
+        ...state,
+        completed: !state.completed
+      }
+    default:
+      return state
+  }
+}
+
+const todos = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return [
+        ...state,
+        todo(undefined, action)
+      ]
+    case 'TOGGLE_TODO':
+      return state.map(t =>
+        todo(t, action)
+      )
+    default:
+      return state
+  }
+}
+
+const undoableTodos = undoable(todos, { filter: distinctState() })
+
+export default undoableTodos
+```
+在这里就研究一下todos的reducer就好，最核心的功能。<br/>
+我们可以看到一个神奇的东西 <strong style="color:red">redux-undo</strong>,这个NPM包挺6的，专门为redux设计的undo的库<br/>
+不得不说Redux的生态技术圈可是真的庞大啊！  嗯， 好用！<br/>
 # 树状视图
 
 ```javascript
