@@ -86,6 +86,32 @@ export default undoableTodos
 在这里就研究一下todos的reducer就好，最核心的功能。<br/>
 我们可以看到一个神奇的东西 <strong style="color:red">redux-undo</strong>,这个NPM包挺6的，专门为redux设计的undo的库<br/>
 不得不说Redux的生态技术圈可是真的庞大啊！  嗯， 好用！<br/>
+研究一下[redux-undo npm文档](https://www.npmjs.com/package/redux-undo#history-api)<br/>
+```javascript
+undoable(reducer, {
+  limit: false, // 回退步数
+ 
+  filter: () => true, // 过滤器，是否回退
+ 
+  undoType: ActionTypes.UNDO, // define a custom action type for this undo action
+  redoType: ActionTypes.REDO, // define a custom action type for this redo action
+ 
+  jumpToPastType: ActionTypes.JUMP_TO_PAST, // define custom action type for this jumpToPast action
+  jumpToFutureType: ActionTypes.JUMP_TO_FUTURE, // define custom action type for this jumpToFuture action
+ 
+  initialState: undefined, // initial state (e.g. for loading)
+  initTypes: ['@@redux/INIT', '@@INIT'] // history will be (re)set upon init action type
+  initialHistory: { // initial history (e.g. for loading)
+    past: [],
+    present: config.initialState,
+    future: []
+  },
+ 
+  debug: false, // set to `true` to turn on debugging
+})
+```
+嗯属性还是挺多的，就是文档上没指出**distinctState**的作用是个啥，以后在研究吧
+
 # 树状视图
 
 ```javascript
