@@ -40,22 +40,38 @@
   {% endif %}
   {% if site.wechat_username %}
   <li>
-    <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}" title="weChat: {{site.wechat_username}}">
+    <div onclick="showWechat()" title="weChat: {{ site.wechat_username }} | 点击查看二维码" style="cursor: pointer;">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
       </span>
-    </a>
+    </div>
   </li>
   {% endif %}
   {% if site.qq_username %}
   <li>
-    <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}" title="QQ: {{site.qq_username}}">
+    <div onclick="showQQ()" title="QQ: {{ site.qq_username }} | 点击查看二维码" style="cursor: pointer;">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
       </span>
-    </a>
+    </div>
   </li>
   {% endif %}
 </ul>
+<div id='img_div' style="display: none;">
+  <img id='my_img' src='/img/wechat_info.png' style="width: 200px;height: 200px;"/>
+</div>
+
+<script>
+  var imgDiv = document.getElementById('img_div')
+  var img = document.getElementById('my_img')
+  var showWechat = function(){
+    imgDiv.style.display = 'block'
+    img.src = '/img/wechat_info.png'
+  }
+  var showQQ = function(){
+    imgDiv.style.display = 'block'
+    img.src = '/img/qq_info.png'
+  }
+</script>
