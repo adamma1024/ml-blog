@@ -13,7 +13,9 @@ future: true
 
 # SNS settings
 RSS: false
+qq_username: 240814476
 github_username:    qq240814476
+musioc163_username:    没乐评我不会来网易
 wechat_username:    wodetaoyang520
 
 
@@ -76,7 +78,7 @@ ba_domain: qq240814476.github.io
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "The unit that measures people’s price is pay rather than gain<br>衡量人价值的单位是付出而非获得"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-ml-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
