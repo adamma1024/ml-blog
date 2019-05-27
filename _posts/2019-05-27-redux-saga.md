@@ -8,8 +8,7 @@ tags:
   - redux-thunk
 ---
 
-> 借鉴了[这篇文章](https://blog.csdn.net/wj610671226/article/details/82730051)<br/>
-> [redux-saga文档](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)<br/>
+> 借鉴了[这篇文章](https://blog.csdn.net/wj610671226/article/details/82730051)
 
 ## redux-thunk的使用
 
@@ -106,3 +105,10 @@ app.listen(3001);
 整个流程就是一个简单的使用redux-thunk去发送请求并<code>dispatch</code>其他action。<br/>
 最终拿到了<code>'Hello World'</code>。<br/>
 这种写法非常通俗易懂，是个初学者上手的好方法。但是经过上次redux-actions的教训，我决定先看看redux-saga再设计如何重构<code>Vuex</code>的异步action<br/>
+
+## redux-saga的使用
+
+首先，先看[redux-saga文档](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)<br/>
+了解一下redux-saga的基础知识，再看一下[ES6的yield*表达式](http://es6.ruanyifeng.com/#docs/generator#yield--%E8%A1%A8%E8%BE%BE%E5%BC%8F)了解一下什么是生成器，和工作原理。<br/>
+这样才能确保你能读懂和写出**redux-saga**代码
+
