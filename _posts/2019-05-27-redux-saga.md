@@ -110,5 +110,5 @@ app.listen(3001);
 
 首先，先看[redux-saga文档](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)<br/>
 了解一下redux-saga的基础知识，再看一下[ES6的yield*表达式](http://es6.ruanyifeng.com/#docs/generator#yield--%E8%A1%A8%E8%BE%BE%E5%BC%8F)了解一下什么是生成器，和工作原理。<br/>
-这样才能确保你能读懂和写出**redux-saga**代
+这样才能确保你能读懂和写出**redux-saga**代码
 
