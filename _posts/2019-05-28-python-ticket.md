@@ -28,6 +28,11 @@ tags:
 #### python
 这篇文章挺好的，放个链接自己点吧，不说这种已经被说烂了的废话了。[python环境搭建](https://www.runoob.com/python3/python3-install.html)
 
-#### spli
+#### splinter
+> 自动化测试工具，模拟浏览器操作
+[中文文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/install.html)
+这文档不是很全啊，有能力还是看英文的
+[英文文档](https://splinter.readthedocs.io/en/latest/)
+文档还是非常重要的，这个库是基于selenium封装的，后面会介绍遇到的**坑**！！
 
 
