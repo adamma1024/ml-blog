@@ -17,7 +17,7 @@ tags:
 > 今天是上海德奥gala的开票日。我一直守在那里终于等到放票，但悲催的是：在放票的那一刻，浏览器逐渐卡死。刷新多次后终于不卡了，但票也抢没了(┬＿┬)
 
 真的很生气，老子看这么多演出最讨厌的就是黄牛。等等，身为一个程序员竟然连黄牛都抢不过这可太丢人了吧。想想人家**12306分流**是吧，我辈楷模。<br/>
-不管了我也要撸一个出来！<br/>
+不管了我也要撸一个出来！**幸好还有6.1的加场可以抢**<br/>
 
 ## 选择合适的脚本语言
 由于**python**的强大早已经被我的同事以及同学各种安利，我第一个想到了它。虽然之前没用过，但是没关系，事事总有第一次嘛！走，破了他！
@@ -96,71 +96,19 @@ def test(self):
     # 一年阻塞sleep
     sleep(100)
 ```
+
 有用的点：
-- 找元素find_by_xpath比较稳，毕竟可以根据特殊属性找到对应的元素
+- 找元素<code>find_by_xpath</code>比较稳，毕竟可以根据特殊属性找到对应的元素
 - 点击之前先滚动过去，要不然可能会提示点错地方了
-- scroll_to不在Browser的方法里面，而是在Browser.element_class里面
-代码如下：
-```python
-# main.py
-from api import api
+- <code>scroll_to</code>不在<code>Browser</code>类的方法里面，而是在<code>WebDriverElement</code>类里面，当然了可以用<code>Browser</code>对象的<code>element_class</code>属性来调用    **Tip：推荐大家去看源码，其实非常简单而且很清楚明了，嗯，对python好感更深了**
+- 有时候，执行完你得命令浏览器会闪退，所以我通常加个<code>sleep</code>来阻塞，用来测试
+- <code>Browser</code> 还给通过他API（find_by_xpath等）找到的DOM元素添加了很多方法如<code>first</code>,<code>click</code>等，详情请对类按住**ctrl+左键**看源码或者splinter文档
 
-print('黑牛抢票，你值得拥有')
-api = api()
-# 设置用户名密码
-api.setUserInfo()
-# 登录
-api.login()
-# 买票
-api.getTickt()
+我不会告诉你们我**记错了时间**，然后在**写完程序的那一天才知道已经加场结束了**，😭😭😭，不过没关系我安慰着自己起码python入门了。而且写得是个玩具对浏览器操作还是太慢了，有这时间早都抢完了，所以还是要升级程序。
 
-# api.py
-from config import config
-from time import sleep
-from splinter.browser import Browser
-# traceback模块被用来跟踪异常返回信息
-import traceback
+1. 用爬虫爬到数据
+2. 筛选有用的信息
+3. 用代理池发送抢票请求，确保不会被锁定ip
+4. 挂在一个服务器上，如阿里云，以保证网速
 
-config = config()
-
-bwr=Browser(driver_name="chrome")
-
-def clickElement(ele):
-    try:
-        bwr.element_class.scroll_to(ele)
-        ele.click()
-    except e:
-        print(e)
-
-class api:
-    # 设置用户名密码
-    def setUserInfo(self):
-      self.username = str(input("用户名:"))
-      self.passwd = str(input("密码:"))
-      print(self.username)
-      print(self.passwd)
-    
-    
-    
-    # 测试聚橙
-    def testjc(self):
-        bwr=Browser(driver_name="chrome")
-        bwr.visit(config.jc)
-        searchbox = bwr.find_by_id('search_keywords')
-        keyWord = str(input('请输入你想搜索的演出（按回车键搜索）：'))
-        searchbox.fill(keyWord)
-        # 点击搜索
-        searchBtn = bwr.find_by_xpath('//div[@class="search-btn icon-search-header"]').first
-        clickElement(searchBtn)
-        # 爬虫展示list
-        
-        # sleep
-        sleep(1000)
-    # 发送登录连接
-    def login(self):
-      print('登录完毕')
-
-    # 购票
-    def getTickt(self):
-      print('抢票成功')
-```
+期待更加NB的程序
