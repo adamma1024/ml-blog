@@ -35,4 +35,9 @@ tags:
 [英文文档](https://splinter.readthedocs.io/en/latest/)
 文档还是非常重要的，这个库是基于selenium封装的，后面会介绍遇到的**坑**！！
 
+### 开始写第一个python程序！
+
+> 首先你需要一个好老师，[Python-100-Days(什么？从新手到大师才100天？)](https://github.com/qq240814476/Python-100-Days)，还有[python爬虫精华](https://github.com/qq240814476/PythonSpiderNotes)都是不错的入门读物！强力打call
+
+
 
