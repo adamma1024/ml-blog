@@ -3,9 +3,8 @@
 
 Hey，我是马林
 
-职业是软件工程师，
-目前在做前端，擅长Vue及相关UI框架，在自学react和TS中
-iview开源贡献者，iview深度用户
+职业是前端工程师，擅长Vue及相关UI框架/java等，在自学React和TS中，详细简历👉 戳[ml-resume](https://github.com/qq240814476/ml-resume) <br/>
+iview开源贡献者，iview深度用户<br/>
 一些作品和开源项目，👉 戳 [ml-vue-drag-tree](https://github.com/qq240814476/ml-vue-drag-tree)、[vue-tab-component](https://github.com/qq240814476/vue-tab-component)。
 
 ```javascript

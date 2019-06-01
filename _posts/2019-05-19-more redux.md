@@ -83,10 +83,12 @@ const undoableTodos = undoable(todos, { filter: distinctState() })
 
 export default undoableTodos
 ```
+
 在这里就研究一下todos的reducer就好，最核心的功能。<br/>
 我们可以看到一个神奇的东西 <strong style="color:red">redux-undo</strong>,这个NPM包挺6的，专门为redux设计的undo的库<br/>
 不得不说Redux的生态技术圈可是真的庞大啊！  嗯， 好用！<br/>
 研究一下[redux-undo npm文档](https://www.npmjs.com/package/redux-undo#history-api)<br/>
+
 ```javascript
 undoable(reducer, {
   limit: false, // 回退步数
@@ -288,5 +290,3 @@ export default ConnectedNode
 
 可以看出来，action主要是定义有哪些动作，而缩减器才是真正去决定每个action做什么的,Node定义了什么时候去触发对应的action，效果如下 <br/>
 ![](/img/redux-tree.gif)
-
-# 真实场景
