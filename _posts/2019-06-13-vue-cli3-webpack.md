@@ -69,3 +69,5 @@ module.exports = {
 
 #### 替换一个规则里的 Loader
 
+#### 修改插件选项
+
