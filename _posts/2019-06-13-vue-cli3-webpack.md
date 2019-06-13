@@ -53,3 +53,13 @@ module.exports = {
   }
 }
 ```
+
+这里就有``坑``了！！！由于vue.config.js里面的变量名有的和webpack不一致，导致你可能会配置错误。
+
+> 有些 webpack 选项是基于 vue.config.js 中的值设置的，所以不能直接修改。
+> 例如你应该修改 vue.config.js 中的 outputDir 选项而不是修改 output.path；
+> 你应该修改 vue.config.js 中的 publicPath 选项而不是修改 output.publicPath。
+> 这样做是因为 vue.config.js 中的值会被用在配置里的多个地方，以确保所有的部分都能正常工作在一起。
+
+### 链式操作（高级）
+利用[webpack-chain](https://github.com/neutrinojs/webpack-chain) 修改配置
