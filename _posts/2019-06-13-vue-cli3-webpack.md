@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Vue-cli3打包配置详解"
+subtitle: "How to config Vue-cli3's webpack file -- vue.config.js"
+author: "malin"
+header-img: ""
+header-bg-css: "linear-gradient(to right, #24b94a, #38ef7d);"
+tags:
+  - vue
+  - vue-cli
+  - webpack
+---
+
+> 羽坛一代名将，李宗伟于今日退役。 愿天堂，呸呸呸，愿大佬战胜病魔享受幸福人生！
+
+## Vue-cli 利弊
+曾经有个小伙伴问我，大佬Vue-cli有啥好处啊？我是这样回答他的：
+> “好处就是集成了很多配置”
+
+小伙伴又问了，那坏处是啥啊，我是这么回答的：
+> “坏处就是集成了很多配置”
+
+是不是有种``“成也风云，败也风云”``的感jio~,没错，对于我来说就是这样<br/>
+
+Vue-cli集成了大量的webpack配置，直接配置好了<code>loader</code>，<code>babel</code>甚至<code>eslint</code>,对于开发来说，你可以直接写代码然后运行一行
+
+```node
+npm run serve
+```
+
+就可以看到你写的页面了。看似非常的方便，但对于初学者来说，会造成``知其然，不知其所以然``，这就是为什么Vue官网上在对Vue-cli的介绍上写着几个赫然大字：“请注意我们```不推荐```新手直接使用<code>vue-cli</code>”<br/>
+
+因为Vue-cli本身做了大量的webpack配置，``2000``多行的配置代码，才使得你开发起来很方便，但是在修改他的配置的时候我才发现了，cli的最大诟病：
+> 改起来是真滴费劲！！
+
+本文章主要是针对Vue-cli的webpack配置做分析
+
+## vue.config.js
