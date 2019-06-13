@@ -67,3 +67,5 @@ module.exports = {
 
 #### 修改 Loader 选项
 
+#### 替换一个规则里的 Loader
+
