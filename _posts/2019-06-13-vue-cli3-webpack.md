@@ -11,7 +11,7 @@ tags:
   - webpack
 ---
 
-> 羽坛一代名将，李宗伟于今日退役。 愿天堂，呸呸呸，愿大佬战胜病魔享受幸福人生！
+> 羽坛一代名将，李宗伟于今日退役。 愿天堂，呸呸呸，愿大佬战胜病魔享受幸福人生！🎉🎉🎉
 
 ## Vue-cli 利弊
 曾经有个小伙伴问我，大佬Vue-cli有啥好处啊？我是这样回答他的：
@@ -30,9 +30,9 @@ npm run serve
 
 就可以看到你写的页面了。看似非常的方便，但对于初学者来说，会造成``知其然，不知其所以然``，这就是为什么Vue官网上在对Vue-cli的介绍上写着几个赫然大字：“请注意我们```不推荐```新手直接使用<code>vue-cli</code>”<br/>
 
-因为Vue-cli本身做了大量的webpack配置，``2000``多行的配置代码，才使得你开发起来很方便，但是在修改他的配置的时候我才发现了，cli的最大诟病：
+因为Vue-cli本身做了大量的webpack配置，``2000``多行的配置代码(包括[webpack-chain配置源码](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config) 共``784``行，[vue-cli/packages/@vue/cli-service/lib/Service.js](https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/cli-service/lib/Service.js) 共``423``行, [vue-cli/packages/@vue/cli-service/lib/options.js](https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js) ``145``行，[webpack插件配置](https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js) ``731``行)，才使得你开发起来很方便🙂🙂🙂🔥，但是在修改他的配置的时候我才发现了，cli的最大诟病：
 > 改起来是真滴费劲！！
 
-本文章主要是针对Vue-cli的webpack配置做分析
+本文章主要是针对Vue-cli的webpack配置做分析,可以先看看源码: 
 
 ## vue.config.js
