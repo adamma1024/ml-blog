@@ -79,3 +79,6 @@ module.exports = {
 
 ### 应用
 
+### 库
+
+#### Vue vs. JS/TS 入口文件
