@@ -82,3 +82,7 @@ module.exports = {
 ### 库
 
 #### Vue vs. JS/TS 入口文件
+
+### Web Components 组件
+
+#### 注册多个 Web Components 组件的包
