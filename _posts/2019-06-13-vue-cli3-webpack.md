@@ -86,3 +86,5 @@ module.exports = {
 ### Web Components 组件
 
 #### 注册多个 Web Components 组件的包
+
+#### 异步 Web Components 组件
