@@ -63,3 +63,4 @@ module.exports = {
 
 ### 链式操作（高级）
 利用[webpack-chain](https://github.com/neutrinojs/webpack-chain) 修改配置
+> 当你打算链式访问特定的 loader 时，vue inspect 会非常有帮助。
