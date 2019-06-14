@@ -38,10 +38,10 @@ npm run serve
 
 ## vue.config.js 🐛
 
-当你执行完Vue-cli的init命令之后,你就会发现，并没有webpack.config.js，只有一个vue.config.js。基本上你的webpack配置都会写入这个文件，并且通过 [webpack-merge](https://github.com/survivejs/webpack-merge) merge合并到Vue-cli的webpack配置中
+当你执行完Vue-cli的<code>init</code>命令之后,你就会发现，并没有webpack.config.js，只有一个<code>vue.config.js</code>。基本上你的webpack配置都会写入这个文件，并且通过 [webpack-merge](https://github.com/survivejs/webpack-merge) merge合并到Vue-cli的webpack配置中
 
 ### 简单的配置方式
-调整 webpack 配置最简单的方式就是在 vue.config.js 中的 configureWebpack 选项提供一个对象：
+调整 <code>webpack</code> 配置最简单的方式就是在 <code>vue.config.js</code> 中的 <code>configureWebpack</code> 选项提供一个对象：
 
 ```js
 // vue.config.js
@@ -54,19 +54,19 @@ module.exports = {
 }
 ```
 
-这里就有``坑``了！！！由于vue.config.js里面的变量名有的和webpack不一致，导致你可能会配置错误。
+这里就有``坑``了！！！由于<code>vue.config.js</code>里面的变量名有的和<code>webpack</code>不一致，导致你可能会配置错误。
 
-> 有些 webpack 选项是基于 vue.config.js 中的值设置的，所以不能直接修改。
-> 例如你应该修改 vue.config.js 中的 outputDir 选项而不是修改 output.path；
-> 你应该修改 vue.config.js 中的 publicPath 选项而不是修改 output.publicPath。
-> 这样做是因为 vue.config.js 中的值会被用在配置里的多个地方，以确保所有的部分都能正常工作在一起。
+> 有些<code> webpack</code> 选项是基于 <code>vue.config.js</code> 中的值设置的，所以不能直接修改。
+> 例如你应该修改 <code>vue.config.js</code> 中的 <code>outputDir</code> 选项而不是修改 <code>output.path</code>；
+> 你应该修改 <code>vue.config.js</code> 中的 <code>publicPath</code> 选项而不是修改 <code>output.publicPath</code>。
+> 这样做是因为 <code>vue.config.js</code> 中的值会被用在配置里的多个地方，以确保所有的部分都能正常工作在一起。
 
 ### 链式操作（高级）
 利用[webpack-chain](https://github.com/neutrinojs/webpack-chain) 修改配置
-> 当你打算链式访问特定的 loader 时，vue inspect 会非常有帮助。
+> 当你打算链式访问特定的 <code>loader</code> 时，<code>vue inspect</code> 会非常有帮助。
 
 #### 修改 Loader 选项
-> 对于 CSS 相关 loader 来说，我们推荐使用 css.loaderOptions 而不是直接链式指定 loader。这是因为每种 CSS 文件类型都有多个规则，而 css.loaderOptions 可以确保你通过一个地方影响所有的规则
+> 对于 CSS 相关 <code>loader</code> 来说，我们推荐使用 <code>css.loaderOptions</code> 而不是直接链式指定 loader。这是因为每种 CSS 文件类型都有多个规则，而 <code>css.loaderOptions</code> 可以确保你通过一个地方影响所有的规则
 
 ```js
 // vue.config.js
@@ -85,7 +85,7 @@ module.exports = {
 ```
 
 #### 替换一个规则里的 Loader
-如果你想要替换一个已有的基础 loader，例如为内联的 SVG 文件使用 vue-svg-loader 而不是加载这个文件：
+如果你想要替换一个已有的基础 loader，例如为内联的 SVG 文件使用 <code>vue-svg-loader</code> 而不是加载这个文件：
 
 ```js
 // vue.config.js
@@ -161,10 +161,10 @@ vue-cli-service inspect --rules
 vue-cli-service inspect --plugins
 ```
 
-> 当然了，推荐的还是🔥🔥🔥直接用第一条命令 npm run inspect 直接全部输出然后ctrl + F 找你要改的<br/>
+> 当然了，推荐的还是🔥🔥🔥直接用第一条命令 <code>npm run inspect</code> 直接全部输出然后<code>ctrl + F</code> 找你要改的<br/>
 > 没错，就是这么麻烦🙃🙃🙃
 
-举个🌰：我想修改CopyWebpackPlugin插件的属性需要 ``五步走``
+举个🌰：我想修改<code>CopyWebpackPlugin</code>插件的属性需要 ``五步走``
 
 1. npm run inspect > output.js
 2. 在output.js里面找到CopyWebpackPlugin的名称(config修改过的)和现有参数
@@ -249,9 +249,9 @@ vue-cli-service build --target lib --name myLib [entry]
 
 > 当使用一个 .vue 文件作为入口时，你的库会直接暴露这个 Vue 组件本身，因为组件始终是默认导出的内容。
 > 然而，当你使用一个 .js 或 .ts 文件作为入口时，它可能会包含具名导出，所以库会暴露为一个模块。
-> 也就是说你的库必须在 UMD 构建中通过 window.yourLib.default 访问，
-> 或在 CommonJS 构建中通过 const myLib = require('mylib').default 访问。
-> 如果你没有任何具名导出并希望直接暴露默认导出，你可以在 vue.config.js 中使用以下 webpack 配置：
+> 也就是说你的库必须在 <code>UMD</code> 构建中通过 <code>window.yourLib.default</code> 访问，
+> 或在 <code>CommonJS</code> 构建中通过 <code>const myLib = require('mylib').default</code> 访问。
+> 如果你没有任何具名导出并希望直接暴露默认导出，你可以在 <code>vue.config.js</code> 中使用以下 <code>webpack</code> 配置：
 
 ```js
 module.exports = {
@@ -264,4 +264,4 @@ module.exports = {
 ```
 
 ### Web Components 组件
-web components 由于兼容性并不适用于ie11一下，所以不介绍了。可以自行了解，👉[传送门](https://cli.vuejs.org/zh/guide/build-targets.html#vue-vs-js-ts-%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6)
+<code>web components</code> 由于兼容性并不适用于ie11一下，所以不介绍了。可以自行了解，👉[传送门](https://cli.vuejs.org/zh/guide/build-targets.html#vue-vs-js-ts-%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6)
