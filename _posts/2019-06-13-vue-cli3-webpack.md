@@ -137,6 +137,17 @@ module.exports = {
 ```
 
 ### 审查项目的 webpack 配置
+重头戏啊来了哈，👉
+
+```sh
+//package.json里面加入这句命令
+"inspect": "vue-cli-service inspect > output.js"
+
+//然后命令行里面
+npm run inspect
+```
+
+你就会发现你的目录里面多了一个output.js，进入，嗯``1155``行代码🙃🙃🙃，所有配置都在这里。
 
 ### 以一个文件的方式使用解析好的配置
 
