@@ -148,8 +148,21 @@ npm run inspect
 ```
 
 你就会发现你的目录里面多了一个output.js，进入，嗯``1155``行代码🙃🙃🙃，所有配置都在这里。
+还有一些更加方便的命令
 
-### 以一个文件的方式使用解析好的配置
+```sh
+# 只审查第一条规则
+vue-cli-service inspect module.rules.0
+# 或者指向一个规则或插件的名字
+vue-cli-service inspect --rule vue
+vue-cli-service inspect --plugin html
+# 或者指向一个规则或插件的名字
+vue-cli-service inspect --rules
+vue-cli-service inspect --plugins
+```
+
+> 当然了，推荐的还是🔥🔥🔥直接用第一条命令 npm run inspect 直接全部输出然后ctrl + F 找你要改的<br/>
+> 没错，就是这么麻烦🙃🙃🙃
 
 ## 构建
 
