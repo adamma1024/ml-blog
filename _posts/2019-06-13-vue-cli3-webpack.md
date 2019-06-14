@@ -172,6 +172,55 @@ vue-cli-service inspect --plugins
 4. npm run inspect > output.js 再打印出来新的参数看看有没有加上，或者自信直接第五步
 5. npm run build
 
+来让我们走一遍流程
+
+```sh
+npm run inspect > output.js
+```
+```js
+//找到CopyWebpackPlugin,注意下面的注释，这是这个插件在vue.config.js里面的新名字 config.plugin('copy')
+/* config.plugin('copy') */
+  new CopyWebpackPlugin(
+    [
+      {
+        from: 'E:\\web_pro\\nr.os-ui\\public', // 拷贝哪里的文件
+        to: 'E:\\web_pro\\nr.os-ui\\dist',     // 拷贝去何方
+        toType: 'dir',                         // 新建文件夹么
+        ignore: [                              // 忽略哪些文件
+          '.DS_Store'
+        ]
+      }
+    ]
+  )
+```
+
+我想添加忽略文件怎么办？看看[CopyWebpackPlugin官方文档](https://www.webpackjs.com/plugins/copy-webpack-plugin/)吧
+
+```js
+// vue.config.js 里面添加
+chainWebpack: config => config.plugin('copy').tap((args) => {
+  args[0][0].ignore.push('output/**')  //因为里面是个数组，这个数组是args[0]所以这个参数里面的第一个子元素是args[0][0]
+  return args
+}),
+```
+
+```js
+//添加成功
+/* config.plugin('copy') */
+  new CopyWebpackPlugin(
+    [
+      {
+        from: 'E:\\web_pro\\nr.os-ui\\public', // 拷贝哪里的文件
+        to: 'E:\\web_pro\\nr.os-ui\\dist',     // 拷贝去何方
+        toType: 'dir',                         // 新建文件夹么
+        ignore: [                              // 忽略哪些文件
+          '.DS_Store',
+          'output/**'
+        ]
+      }
+    ]
+  )
+```
 
 ## 构建
 
