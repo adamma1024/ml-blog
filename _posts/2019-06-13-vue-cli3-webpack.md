@@ -222,6 +222,12 @@ chainWebpack: config => config.plugin('copy').tap((args) => {
   )
 ```
 
+```sh
+npm run inspect > output.js
+```
+
+大功告成了！这简直也太快乐😊（mafan）了8
+
 ## 构建
 
 ### 应用
