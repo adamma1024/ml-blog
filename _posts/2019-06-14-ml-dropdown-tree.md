@@ -1,6 +1,6 @@
 ---
 layout:     keynote
-title:      "Vue WebUploader 图片上传"
+title:      "Vue WebUploader 图片上传组件"
 subtitle:   "📷 uploader"
 navcolor:   "invert"
 date:       23点25分
@@ -8,10 +8,11 @@ author:     "马林"
 tags:
     - WebUploader
     - Vue
+    - Vue Components
 ---
 
 
-> 下滑这里查看更多内容
+> 基于Vue和WebUploader的图片上传组件
 
 
 TLDR; It covers lots of cool stuff about Service Worker!
