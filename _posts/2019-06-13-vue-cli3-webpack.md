@@ -66,10 +66,75 @@ module.exports = {
 > 当你打算链式访问特定的 loader 时，vue inspect 会非常有帮助。
 
 #### 修改 Loader 选项
+> 对于 CSS 相关 loader 来说，我们推荐使用 css.loaderOptions 而不是直接链式指定 loader。这是因为每种 CSS 文件类型都有多个规则，而 css.loaderOptions 可以确保你通过一个地方影响所有的规则
+
+```js
+// vue.config.js
+module.exports = {
+  chainWebpack: config => {
+    config.module
+      .rule('vue')
+      .use('vue-loader')
+        .loader('vue-loader')
+        .tap(options => {
+          // 修改它的选项...
+          return options
+        })
+  }
+}
+```
 
 #### 替换一个规则里的 Loader
+如果你想要替换一个已有的基础 loader，例如为内联的 SVG 文件使用 vue-svg-loader 而不是加载这个文件：
+
+```js
+// vue.config.js
+module.exports = {
+  chainWebpack: config => {
+    const svgRule = config.module.rule('svg')
+
+    // 清除已有的所有 loader。
+    // 如果你不这样做，接下来的 loader 会附加在该规则现有的 loader 之后。
+    svgRule.uses.clear()
+
+    // 添加要替换的 loader
+    svgRule
+      .use('vue-svg-loader')
+        .loader('vue-svg-loader')
+  }
+}
+```
 
 #### 修改插件选项
+
+```js
+// vue.config.js
+module.exports = {
+  chainWebpack: config => {
+    config
+      .plugin('html')
+      .tap(args => {
+        return [/* 传递给 html-webpack-plugin's 构造函数的新参数 */]
+      })
+  }
+}
+// 你需要熟悉 webpack-chain 的 API 并阅读一些源码以便了解如何最大程度利用好这个选项，
+// 但是比起直接修改 webpack 配置，它的表达能力更强，也更为安全。
+
+// 比方说你想要将 index.html 默认的路径从 /Users/username/proj/public/index.html 改为 /Users/username/proj/app/templates/index.html。通过参考 html-webpack-plugin 你能看到一个可以传入的选项列表。我们可以在下列配置中传入一个新的模板路径来改变它
+
+// vue.config.js
+module.exports = {
+  chainWebpack: config => {
+    config
+      .plugin('html')
+      .tap(args => {
+        args[0].template = '/Users/username/proj/app/templates/index.html'
+        return args
+      })
+  }
+}
+```
 
 ### 审查项目的 webpack 配置
 
