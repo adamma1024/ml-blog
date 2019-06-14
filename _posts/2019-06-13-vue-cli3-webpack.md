@@ -264,7 +264,4 @@ module.exports = {
 ```
 
 ### Web Components 组件
-
-#### 注册多个 Web Components 组件的包
-
-#### 异步 Web Components 组件
+web components 由于兼容性并不适用于ie11一下，所以不介绍了。可以自行了解，👉[传送门](https://cli.vuejs.org/zh/guide/build-targets.html#vue-vs-js-ts-%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6)
