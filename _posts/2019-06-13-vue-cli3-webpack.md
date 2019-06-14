@@ -141,10 +141,10 @@ module.exports = {
 
 ```sh
 //package.json里面加入这句命令
-"inspect": "vue-cli-service inspect > output.js"
+"inspect": "vue-cli-service inspect"
 
 //然后命令行里面
-npm run inspect
+npm run inspect > output.js
 ```
 
 你就会发现你的目录里面多了一个output.js，进入，嗯``1155``行代码🙃🙃🙃，所有配置都在这里。
@@ -163,6 +163,15 @@ vue-cli-service inspect --plugins
 
 > 当然了，推荐的还是🔥🔥🔥直接用第一条命令 npm run inspect 直接全部输出然后ctrl + F 找你要改的<br/>
 > 没错，就是这么麻烦🙃🙃🙃
+
+举个🌰：我想修改CopyWebpackPlugin插件的属性需要 ``五步走``
+
+1. npm run inspect > output.js
+2. 在output.js里面找到CopyWebpackPlugin的名称(config修改过的)和现有参数
+3. 在vue.config.js里面修改参数
+4. npm run inspect > output.js 再打印出来新的参数看看有没有加上，或者自信直接第五步
+5. npm run build
+
 
 ## 构建
 
