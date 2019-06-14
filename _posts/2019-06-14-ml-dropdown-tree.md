@@ -1,15 +1,13 @@
 ---
 layout:     keynote
-title:      "Service Worker 101「GDG DevFest 2016 北京」"
-subtitle:   "🎞  Slides:Service Worker 101, Working Offline and Instant Loading (GDG DevFest 2016 Beijing)"
-iframe:     "//huangxuan.me/sw-101-gdgdf/"
+title:      "Vue WebUploader 图片上传"
+subtitle:   "📷 uploader"
 navcolor:   "invert"
-date:       2016-11-20
-author:     "Hux"
+date:       23点25分
+author:     "马林"
 tags:
-    - Slides
-    - Web
-    - PWA
+    - WebUploader
+    - Vue
 ---
 
 
