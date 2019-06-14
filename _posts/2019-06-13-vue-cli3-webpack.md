@@ -230,11 +230,38 @@ npm run inspect > output.js
 
 ## 构建
 
-### 应用
+### 库library
 
-### 库
+首先你应该先去学习[webpack library相关知识](https://www.webpackjs.com/configuration/output/#output-library)<br/>
+然后你就可以通过这行命令打出你所需要的：
+
+```sh
+vue-cli-service build --target lib --name myLib [entry]
+# File                     Size                     Gzipped
+
+# dist/myLib.umd.min.js    13.28 kb                 8.42 kb
+# dist/myLib.umd.js        20.95 kb                 10.22 kb
+# dist/myLib.common.js     20.57 kb                 10.09 kb
+# dist/myLib.css           0.33 kb                  0.23 kb
+```
 
 #### Vue vs. JS/TS 入口文件
+
+> 当使用一个 .vue 文件作为入口时，你的库会直接暴露这个 Vue 组件本身，因为组件始终是默认导出的内容。
+> 然而，当你使用一个 .js 或 .ts 文件作为入口时，它可能会包含具名导出，所以库会暴露为一个模块。
+> 也就是说你的库必须在 UMD 构建中通过 window.yourLib.default 访问，
+> 或在 CommonJS 构建中通过 const myLib = require('mylib').default 访问。
+> 如果你没有任何具名导出并希望直接暴露默认导出，你可以在 vue.config.js 中使用以下 webpack 配置：
+
+```js
+module.exports = {
+  configureWebpack: {
+    output: {
+      libraryExport: 'mlLibrary' //你得库的名字
+    }
+  }
+}
+```
 
 ### Web Components 组件
 
