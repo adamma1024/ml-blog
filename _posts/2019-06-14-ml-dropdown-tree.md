@@ -1,7 +1,7 @@
 ---
 layout:     keynote
 title:      "Vue WebUploader 图片上传组件"
-subtitle:   "📷 uploader"
+subtitle:   "📷 vue-image-uploader"
 navcolor:   "invert"
 date:       23点25分
 author:     "马林"
@@ -13,3 +13,5 @@ tags:
 
 
 > 基于Vue和WebUploader的图片上传组件
+
+暂且命名为vue-image-uploader
