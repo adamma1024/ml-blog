@@ -28,7 +28,7 @@ tags:
 #### 解决方法
 
 1. mode改为<code>hash（如果不愿意请看看第二条）
-2. webpack配置项中的devServer加上
+2. webpack配置项中的<code>devServer加上
 
 ```js
 // history模式下的url会请求到服务器端，但是服务器端并没有这一个资源文件，就会返回404，所以需要配置这一项
