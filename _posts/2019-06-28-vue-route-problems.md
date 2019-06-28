@@ -19,7 +19,7 @@ tags:
 
 #### 描述
 
-1. mode设置为history
+1. mode设置为<code>history
 2. 页面刷新向后台发送请求
 3. 返回404页面
 4. 前台捕获不到这个404
@@ -27,7 +27,7 @@ tags:
 
 #### 解决方法
 
-1. mode改为hash（如果不愿意请看看第二条）
+1. mode改为<code>hash（如果不愿意请看看第二条）
 2. webpack配置项中的devServer加上
 
 ```js
