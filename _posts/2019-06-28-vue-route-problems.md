@@ -19,7 +19,7 @@ tags:
 
 #### 描述
 
-1. mode设置为<code>history
+1. mode设置为<code>history</code>
 2. 页面刷新向后台发送请求
 3. 返回404页面
 4. 前台捕获不到这个404
