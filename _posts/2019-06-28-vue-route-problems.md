@@ -28,8 +28,6 @@ tags:
 #### 解决方法
 
 1. mode改为hash（如果不愿意请看看第二条）
-👉[原链接](https://blog.csdn.net/httguangtt/article/details/84847582)
-
 2. webpack配置项中的devServer加上
 
 ```js
@@ -49,3 +47,9 @@ output: {
 	publicPath: '/'
 },
 ```
+
+👉[原链接](https://blog.csdn.net/httguangtt/article/details/84847582)
+
+## 小结
+
+欢迎大家一起完善，总结
