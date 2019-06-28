@@ -39,7 +39,7 @@ historyApiFallback: {
 
 3. 静态资源问题解决方法
 
-在webpack文件中添加output属性
+在webpack配置中添加output属性
 
 ```js
 output: {
