@@ -31,7 +31,7 @@ tags:
 | 人物名 | 扮演者 | 特点 | 其他音乐剧作品 |
 | - | - | - | - |
 | 亚瑟   | [弗洛朗 莫特 Florent Mothe](https://baike.baidu.com/item/Florent%20Mothe/10052036?fr=aladdin) | **要想装逼一定要认识flo，很多女死忠粉，还要把《法扎》刷一刷** | [《摇滚莫扎特》（法扎）](https://www.bilibili.com/video/av3058236) |
-| 格温薇尔（滚娘，格温 = 滚）   | [卡米·露 Camille Lou](https://movie.douban.com/celebrity/1396740/) | 好凶（胸）！！音色很有特点！ | [《1789：巴士底狱的恋人》](https://www.bilibili.com/video/av2347887/?spm_id_from=333.788.videocard.0) |
+| 格温薇尔（滚娘，格温 谐音 滚）   | [卡米·露 Camille Lou](https://movie.douban.com/celebrity/1396740/) | 好凶（胸）！！音色很有特点！ | [《1789：巴士底狱的恋人》](https://www.bilibili.com/video/av2347887/?spm_id_from=333.788.videocard.0) |
 | 反派一号   | [法比安（发辫） Fabien Incardona](Fabien Incardona) | 史上最具有正能量的反派，“我要好好调整我的状态，不能消极下去，我要迎着光接受命运的挑战！”瞧瞧，这是反派的心理描述么。<br/>高音贼好听，与莫甘娜二人唱功carry全场 | - |
 | 莫甘娜   | [弗洛朗 莫特 Florent Mothe](https://baike.baidu.com/item/Florent%20Mothe/10052036?fr=aladdin) | 音色超有特点，唱功稳的一逼，可爱迷人的反派角色 | - |
 | 兰斯洛特   | [查理 Charlie Boisseau](https://www.last.fm/zh/music/Charlie+Boisseau) | 音色很cute，身为黄毛却对男主有异样的情感（手动滑稽） | - |
