@@ -1,4 +1,4 @@
-# Hux Blog
+# ML Blog
 
 ### [View Live ML Blog &rarr;](https://qq240814476.github.io)
 
