@@ -54,7 +54,7 @@ tags:
 ---
 
 ![豆瓣剧照](http://i2.hdslb.com/bfs/archive/32865ec5189371899beed767f7f7f732813f3a20.jpg)<br/>
-![发辫剧照](http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E4%BA%9A%E7%91%9F%E7%8E%8B%E4%BC%A0%E5%A5%87&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=1975545453,2935098248&os=16296831,1304856059&simid=4082475221,679853564&pn=44&rn=1&di=72270&ln=527&fr=&fmq=1558539179123_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F7f8c976d94d70502396e2e4f5801bf13f86c1353.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined)<br/>
+![发辫剧照](http://i1.hdslb.com/bfs/archive/7f8c976d94d70502396e2e4f5801bf13f86c1353.jpg)<br/>
 ![亚瑟flo剧照](http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E4%BA%9A%E7%91%9F%E7%8E%8B%E4%BC%A0%E5%A5%87&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=2346128493,3819131232&os=1915328916,3836746280&simid=4033469851,479266566&pn=1&rn=1&di=79750&ln=527&fr=&fmq=1558539179123_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2Fa6616b003d6cf8e52308f4402ed2937b08e4483e.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined)<br/>
 **小伙伴们把门锁好，准备好眼镜（shouzhi），前方高能预警，这不是演习！**<br/>
 ![滚娘剧照](/img/musical/gun1.gif)<br/>
