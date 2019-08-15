@@ -31,9 +31,12 @@ npm run serve
 就可以看到你写的页面了。看似非常的方便，但对于初学者来说，会造成``知其然，不知其所以然``，这就是为什么Vue官网上在对Vue-cli的介绍上写着几个赫然大字：“请注意我们```不推荐```新手直接使用<code>vue-cli</code>”<br/>
 
 因为Vue-cli本身做了大量的webpack配置，``2000``多行的配置代码😱😱😱<br/>
-👉👉👉(包括[webpack-chain配置源码](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config) 共``784``行<br/>[vue-cli/packages/@vue/cli-service/lib/Service.js](https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/cli-service/lib/Service.js) 共``423``行<br/>
-[vue-cli/packages/@vue/cli-service/lib/options.js](https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js) ``145``行<br/>
-[webpack插件配置](https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js) ``731``行)<br/>
+👉👉👉(包括
+- [webpack-chain配置源码](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config) 共``784``行
+- [vue-cli/packages/@vue/cli-service/lib/Service.js](https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/cli-service/lib/Service.js) 共``423``行
+- [vue-cli/packages/@vue/cli-service/lib/options.js](https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js) ``145``行
+- [webpack插件配置](https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js) ``731``行)
+
 才使得你开发起来很方便🙂🙂🙂，但是在修改他的配置的时候我才发现了，cli的最大诟病🐷：
 
 > 改起来是真滴费劲！！
@@ -42,7 +45,7 @@ npm run serve
 
 ## vue.config.js 🐛
 
-当你执行完Vue-cli的<code>init</code>命令之后,你就会发现，并没有webpack.config.js，只有一个<code>vue.config.js</code>。基本上你的webpack配置都会写入这个文件，并且通过 [webpack-merge](https://github.com/survivejs/webpack-merge) merge合并到Vue-cli的webpack配置中
+当你执行完Vue-cli的<code>init</code>命令之后,你就会发现，并没有webpack.config.js，只有一个<code>vue.config.js</code>。基本上你的webpack配置都会写入这个文件，并且通过 [webpack-merge](https://github.com/survivejs/webpack-merge) 合并到Vue-cli的webpack配置中
 
 ### 简单的配置方式
 调整 <code>webpack</code> 配置最简单的方式就是在 <code>vue.config.js</code> 中的 <code>configureWebpack</code> 选项提供一个对象：
