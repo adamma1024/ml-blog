@@ -4,4 +4,4 @@
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
-hello world, hello myself!
+hello world, hello myself
