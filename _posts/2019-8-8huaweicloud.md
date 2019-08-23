@@ -8,8 +8,3 @@
 
 ## 域名
 
-AAAA
-AAAA
-AAAA
-AAAA
-AAA
