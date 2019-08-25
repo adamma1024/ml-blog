@@ -23,7 +23,11 @@ tags:
 ## 第二种
 
 1. 安装 `curl`
-2. 执行 `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
+2. 执行 `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`（默认绑定的node4.x，需要修改）
+3. `sodu apt-get install nodejs`
+4. `sodu apt-get install npm`
+5. `sodu npm install npm -g`
+6. `sodu npm install cnpm -g`
 
 ## 总结
 
