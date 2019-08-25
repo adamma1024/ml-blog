@@ -28,6 +28,7 @@ tags:
 4. `sodu apt-get install npm`
 5. `sodu npm install npm -g`
 6. `sodu npm install cnpm -g`
+7. 最后还是需要配置环境变量💔💔💔
 
 ## 总结
 
