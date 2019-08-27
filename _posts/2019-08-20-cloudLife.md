@@ -3,7 +3,7 @@ layout: post
 title: 我的云生活 -- node 安装
 subtitle: How to install node in Ubuntu 🍔
 author: "malin"
-header-style: text
+header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 tags:
   - ubuntu
   - node
@@ -29,6 +29,12 @@ tags:
 5. `sodu npm install npm -g`
 6. `sodu npm install cnpm -g`
 7. 最后还是需要配置环境变量💔💔💔
+
+
+## 好用的插件
+
+1. zsh
+2. tmux
 
 ## 总结
 
