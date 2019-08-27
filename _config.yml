@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: 240814476@qq.com
 description: "我只相信人只有一辈子，所以想做什么就去做吧 -- 一只爱音乐爱生活不爱敲代码的小可爱"
 keyword: "马林, ML马林, ML, mlpro, @mlpro, 马林的博客, malin Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://qq240814476.github.io"              # your host, for absolute URL
+url: "https://www.malin-life.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -68,7 +68,7 @@ netease_comment: false
 # Analytics settings
 # Baidu Analytics 
 # ba_track_id: [your track id]
-ba_domain: qq240814476.github.io
+ba_domain: malin-life.com
 
 # Google Analytics
 # ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
