@@ -2,16 +2,16 @@
 layout: post
 title: Redux plug-in --redux-actions
 author: "malin"
-header-style: text
+header-bg-css: "linear-gradient(to right, #5cadff, #38ef7d);"
 tags:
   - redux
   - redux-actions
 ---
 
 使用了redux重构Vuex已经到了尾声，只剩下异步请求数据了，但是在这时我却发现了一个插件，叫做redux-actions！<br/>
-我定睛一看，what f**k！这插件写起来action这么简单易懂啊，老子白写了这么多了。没人趟坑就是这么惨。<br/>
+我定睛一看，what f* *k！这插件写起来action这么简单易懂啊，老子白写了这么多了。没人趟坑就是这么惨。<br/>
 抱怨归抱怨，赶紧来看看这东西到底怎么个好法，然后乖乖重写吧<br/>
-先说一点，在比较大的项目中actions比较多。**极力推荐**<strong style="color:red;font-size:20px;">createActions + handleActions</strong>**的写法**
+先说一点，在比较大的项目中actions比较多。**极力推荐** `createActions + handleActions` 的写法
 
 # createAction 和 createActions
 - **createAction**
