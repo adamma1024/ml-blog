@@ -3,7 +3,6 @@ layout: post
 title: "Vue-cli3打包配置详解"
 subtitle: "How to config Vue-cli3's webpack file -- vue.config.js"
 author: "malin"
-header-img: ""
 header-bg-css: "linear-gradient(to right, #24b94a, #38ef7d);"
 tags:
   - vue

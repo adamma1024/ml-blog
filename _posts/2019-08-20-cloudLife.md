@@ -1,10 +1,9 @@
 ---
 layout: post
 title: 我的云生活 -- node 安装
-subtitle: How to install node in Ubuntu
+subtitle: How to install node in Ubuntu 🍔
 author: "malin"
 header-style: text
-header-img: "img/ali-cloud.jpg"
 tags:
   - ubuntu
   - node
