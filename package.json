@@ -1,5 +1,5 @@
 {
-    "name": "ml-blog",
+    "name": "qq240814476.github.io",
     "title": "ML Blog",
     "author": "malin <240814476@qq.com>",
     "version": "1.7.0",
@@ -20,6 +20,9 @@
         "start" : "jekyll serve -w -l --host 0.0.0.0 --port 4000",
         "dev"   : "grunt watch & npm run start",
         "boil"  : "git push boilerplate boilerplate:master",
-        "push"  : "git push origin master --tag"
+        "push"  : "git push origin master --tag",
+        "preview": "cd _site; python -m SimpleHTTPServer 8020",
+        "py3view": "cd _site; python3 -m http.server 8020",
+        "watch"  : "grunt watch & npm run preview & jekyll serve -w"
     }
 }
