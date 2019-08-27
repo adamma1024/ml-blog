@@ -3,7 +3,7 @@ layout:     post
 title:      "深入redux"
 date:       2019-05-19 14:14:22
 author:     "malin"
-header-style: text
+header-img: "img/redux.jpg"
 tags:
     - Redux
     - React
