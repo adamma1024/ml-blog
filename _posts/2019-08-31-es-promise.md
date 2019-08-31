@@ -64,10 +64,31 @@ Class MyPromise{
 ## then
 
 ```js
+// 加两个数组当栈
 Class MyPromise {
-  // ...
+  constructor(){
+    // ...
+    const onResolveStack = []
+    const onRejectedStack = []
+  }
+  
 }
 then(onFulfilled, onRejected){
-  
+  let {state, value} = this 
+  return new MyPromise((onFulfilledNext, onRejectedNext)={
+    if(!isFunction(onFulfilled)){
+
+    }
+    switch(state){
+      case Pending
+        this.onResolveStack.push(onFulfilledNext)
+        this.onRejectedStack.push(onRejectedNext)
+        break
+      case Fulfilled
+        break
+      case Rejected
+        break
+    }
+  })
 }
 ```
