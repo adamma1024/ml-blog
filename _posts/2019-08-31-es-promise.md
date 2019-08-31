@@ -13,7 +13,7 @@ tags:
 ```js
 const isFunction = arg => (typeof arg === 'function')
 
-Class Promise {
+Class MyPromise {
   constructor(handle){
     if (!isFunction(handle)){
       throw('argument must be a Function!')
@@ -31,7 +31,7 @@ const Fulfilled = 'Fulfilled'
 const Rejected = 'Rejected'
 
 // 修改状态
-Class Promise{
+Class MyPromise{
   constructor(handle){
     if(!isFunction(handle)){
       throw('...')
@@ -62,3 +62,12 @@ Class Promise{
 ```
 
 ## then
+
+```js
+Class MyPromise {
+  // ...
+}
+then(onFulfilled, onRejected){
+  
+}
+```
