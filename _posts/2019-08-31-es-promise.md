@@ -67,28 +67,57 @@ Class MyPromise{
 // 加两个数组当栈
 Class MyPromise {
   constructor(){
-    // ...
-    const onResolveStack = []
-    const onRejectedStack = []
+    // ... 添加队列
+    const _fulfilledQueues = []
+    const _rejectedQueues = []
   }
   
 }
 then(onFulfilled, onRejected){
-  let {state, value} = this 
+  const {_state, _value} = this 
   return new MyPromise((onFulfilledNext, onRejectedNext)={
-    if(!isFunction(onFulfilled)){
-
+    const fulfilled = value => {
+      try{
+        if(!isFunction(onFulfilled)){
+          onFulfilledNext(value)
+        } else {
+          const res = onFulfilled(value)
+          if(res instanceof MyPromise){
+            res.then(onFulfilledNext, onRejectedNext)
+          } else{
+            onFulfilledNext(res)
+          }
+        }
+      } catch(e){
+        onRejectedNext(e)
+      }
     }
-    switch(state){
+    const rejected = value => {
+      try{
+        if(!isFunction(onRejected)){
+          onRejectedNext(value)
+        } else {
+          const res = onRejected(value)
+          if(res instanceof MyPromise){
+            res.then(onFulfilledNext, onRejectedNext)
+          } else {
+            onRejectedNext(res)
+          }
+        }
+      } catch (e) {
+        onRejectedNext(e)
+      }
+    }
+    switch(_state){
       case Pending
-        this.onResolveStack.push(onFulfilledNext)
-        this.onRejectedStack.push(onRejectedNext)
+        this._fulfilledQueues.push(onFulfilledNext)
+        this._rejectedQueues.push(onRejectedNext)
         break
       case Fulfilled
-        onFulfilledNext(value)
+        fulfilled(_value)
         break
       case Rejected
-        onRejectedNext(value)
+        rejected(_value)
         break
     }
   })
