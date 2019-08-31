@@ -85,8 +85,10 @@ then(onFulfilled, onRejected){
         this.onRejectedStack.push(onRejectedNext)
         break
       case Fulfilled
+        onFulfilledNext(value)
         break
       case Rejected
+        onRejectedNext(value)
         break
     }
   })
