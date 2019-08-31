@@ -123,3 +123,51 @@ then(onFulfilled, onRejected){
   })
 }
 ```
+
+## 队列运行
+
+```js
+_resolve(val){
+  const run = () => {
+    if(this._status === Pending) return
+    this._status = FULFILLED
+    const fulfillRun = (value) => {
+      let cb
+      while(cb = this._fulfilledQueues.shift()){
+        cb(value)
+      }
+    }
+    const rejectedRun = (err) =>{
+      let cb
+      while(cb = this.onRejectedNext.shift()){
+        cb(err)
+      }
+    }
+    // 如果val 是 promise
+    if(val instanceof MyPromise){
+      val.then(value=>{
+        this._value = val
+        fulfillRun(value)
+      }, err=>{
+        this._value = err
+        rejectedRun(err)
+      }rejectedRun)
+    } else {
+      this._value = val
+      fulfillRun(val)
+    }
+  }
+  setTimeOut(run, 0)
+}
+_rejected(err){
+  if(this._status === Pending) return
+  const run = () => {
+    this._status = Rejected
+    let cb
+    while(cb = this._rejectedQueues.shift()){
+      cb(err)
+    }
+  }
+  setTimeOut(run, 0)
+}
+```
