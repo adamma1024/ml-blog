@@ -163,6 +163,7 @@ _rejected(err){
   if(this._status === Pending) return
   const run = () => {
     this._status = Rejected
+    this._value = err
     let cb
     while(cb = this._rejectedQueues.shift()){
       cb(err)
