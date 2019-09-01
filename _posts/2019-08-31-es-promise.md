@@ -197,26 +197,43 @@ Class MyPromise{
     }
   }
   _resolved(val){
-    if(this._status === PENDING) return
+    if(this._status !== PENDING) return
     this._status = FULFILLED
-    const runfulfilled = () => {
-
-    }
-    const runrejected = () => {
-
-    }
-    try{
+    const runfulfilled = (value) => {
       let cb
-      while(cb=this._fulfilled.shift()){
-        cb(val)
+      while(cb = this._fulfilledQueues.shift()){
+        cb(value)
       }
-    } catch (e) {
-      this._rejected(e)
     }
-    
+    const runrejected = (error) => {
+      let cb
+      while(cb=this._rejectedQueues.shift()){
+        cb(error)
+      }
+    }
+    if(val instanceof MyPromise){
+      val.then(value=>{
+        this._value = value
+        runfulfilled(value)
+      },error=>{
+        this._value = error
+        runrejected(error)
+      })
+    }else{
+      this._value = val
+      runfulfilled(val)
+    }
   }
   _rejected(err){
-    if(!err)
+    if(this._status !== PENDING) return
+
+    this._status = REJECTED
+
+    this._value = err
+    let cb
+    while(cb = this._rejectedQueues.shift()){
+      cb(error)
+    }
   }
   then(val){
     return new MyPromise({
