@@ -235,9 +235,63 @@ Class MyPromise{
       cb(error)
     }
   }
-  then(val){
-    return new MyPromise({
-      
+  then(onResolve, onReject){
+    const { _status, _value } = this
+    return new MyPromise((resolveNext, rejectNext) => {
+      const fulfilled = value => {
+        try {
+          if(isFunction(onResolve)){
+            setTimeOut(() => {
+              try {
+                const res = onResolve(value)
+                if(res instanceof MyPromise){
+                  res.then(resolveNext, rejectNext)
+                } else {
+                  resolveNext(res)
+                }
+              } catch (e) {
+                rejectNext(e)
+              }
+            }, 0)
+          } else {
+              resolveNext(value)
+          }
+        } catch(e) {
+          rejectNext(e)
+        }
+      }
+
+      const rejected = err => {
+        try {
+          if(isFunction(onReject)){
+            setTimeOut(()=>{
+              const res = onReject(err)
+              if(res instanceof MyPromise){
+                res.then(resolveNext, rejectNext)
+              } else {
+                rejectNext(res)
+              }
+            }, 0)
+          } else {
+            rejectNext(err)
+          }
+        } catch (e) {
+          rejectNext(e)
+        }
+      }
+
+      switch(_status){
+        case PENDING:
+          this._fulfilledQueues.push(fulfilled)
+          this._rejectedQueues.push(runRejectNext)
+          break
+        case FULFILLED:
+          fulfilled(this._value)
+          break
+        case REJECTED:
+          rejected(this._value)
+          break
+      }
     })
   }
 }
