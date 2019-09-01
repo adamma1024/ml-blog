@@ -172,3 +172,56 @@ _rejected(err){
   setTimeOut(run, 0)
 }
 ```
+
+```js
+const PENDING = 'PENDING'
+const FULFILLED = 'FULFILLED'
+const REJECTED = 'REJECTED'
+
+const isFunction = func => (typeof func === 'function')
+Class MyPromise{
+  constructor(handle){
+    if(!isFunction){
+      throw('must be function')
+    }
+    this._status = PENDING
+    this._value = undefined
+
+    this._fulfilledQueues = []
+    this._rejectedQueues = []
+
+    try{
+      handle(this._resolved.bind(this), this._rejected.bind(this))
+    } catch (e) {
+      this._rejected(e)
+    }
+  }
+  _resolved(val){
+    if(this._status === PENDING) return
+    this._status = FULFILLED
+    const runfulfilled = () => {
+
+    }
+    const runrejected = () => {
+
+    }
+    try{
+      let cb
+      while(cb=this._fulfilled.shift()){
+        cb(val)
+      }
+    } catch (e) {
+      this._rejected(e)
+    }
+    
+  }
+  _rejected(err){
+    if(!err)
+  }
+  then(val){
+    return new MyPromise({
+      
+    })
+  }
+}
+```
