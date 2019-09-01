@@ -304,16 +304,16 @@ Class MyPromise{
     return new MyPromise((res, rej)=>{
       let values = []
       let count = 0
+      for(let [i,p] of list.entries()){
+        this.resolve(p).then((val)=>{
+          values[i] = val
+          count ++
+          if(count >= list.lenght) res(values)
+        }, err => {
+          rej(err)
+        })
+      }
     })
-    for(let [i,p] of list.entries()){
-      this.resolve(p).then((val)=>{
-        values[i] = val
-        count ++
-        if(count >= list.lenght) res(values)
-      }, err => {
-        rej(err)
-      })
-    }
   }
 }
 ```
