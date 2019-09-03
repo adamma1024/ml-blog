@@ -1,6 +1,6 @@
 # ML blog
 
-### [我的博客在这里 &rarr;](http://qq240814476.github.io)
+### [我的博客在这里 &rarr;](http://malin-life.com)
 
 感谢黄轩大佬的模板   [👉HUX BLOG](https://huangxuan.me)
 
