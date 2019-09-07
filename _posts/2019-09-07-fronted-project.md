@@ -16,17 +16,17 @@ tags:
 
 2. 可以使用npm运行自定义脚本
 
-3. 理解Babel、ESLint、webpack等工具在项目中承担的作用
+3. 理解Babel、ESLint、webpack等工具在项目中承担的作用 *
 
-4. ESLint规则检测原理，常用的ESLint配置
+4. ESLint规则检测原理，常用的ESLint配置 *
 
-5. Babel的核心原理，可以自己编写一个Babel插件
+5. Babel的核心原理，可以自己编写一个Babel插件 **
 
 6. 可以配置一种前端代码兼容方案，如Polyfill
 
-7. Webpack的编译原理、构建流程、热更新原理，chunk、bundle和module的区别和应用
+7. Webpack的编译原理、构建流程、热更新原理，chunk、bundle和module的区别和应用 *
 
-8. 可熟练配置已有的loaders和plugins解决问题，可以自己编写loaders和plugins
+8. 可熟练配置已有的loaders和plugins解决问题，可以自己编写loaders和plugins **
 
 ## nginx
 
@@ -76,13 +76,13 @@ tags:
 
 4. SSR实现方案、优缺点、及其性能优化
 
-5. Webpack的性能优化方案
+5. Webpack的性能优化方案 *
 
 6. Canvas性能优化方案
 
-7. React、Vue等框架使用性能优化方案
+7. React、Vue等框架使用性能优化方案 *
 
-## 前端安全
+## 前端安全 **
 
 1. XSS攻击的原理、分类、具体案例，前端如何防御
 
