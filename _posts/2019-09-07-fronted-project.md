@@ -18,15 +18,15 @@ tags:
 
 3. 理解Babel、ESLint、webpack等工具在项目中承担的作用 *
 
-4. ESLint规则检测原理，常用的ESLint配置 *
+4. ESLint规则检测原理，常用的ESLint配置 *  [常用的ESLint配置](https://www.jianshu.com/p/f2d42f9d244c)
 
-5. Babel的核心原理，可以自己编写一个Babel插件 **
+5. Babel的核心原理，可以自己编写一个Babel插件 ** [手撸插件](https://blog.csdn.net/weixin_34364071/article/details/88007887)
 
-6. 可以配置一种前端代码兼容方案，如Polyfill
+6. 可以配置一种前端代码兼容方案，如Polyfill 
 
-7. Webpack的编译原理、构建流程、热更新原理，chunk、bundle和module的区别和应用 *
+7. Webpack的编译原理、构建流程、热更新原理，chunk、bundle和module的区别和应用 * [chunk、bundle和module的区别和应用](https://juejin.im/post/5d70ad50f265da03cf7aae91)
 
-8. 可熟练配置已有的loaders和plugins解决问题，可以自己编写loaders和plugins **
+8. 可熟练配置已有的loaders和plugins解决问题，可以自己编写loaders和plugins ** [编写loaders和plugins](https://juejin.im/post/5bbf190de51d450ea52fffd3)
 
 ## nginx
 
@@ -68,24 +68,24 @@ tags:
 
 ## 性能优化
 
-1. 了解前端性能衡量指标、性能监控要点，掌握一种前端性能监控方案
+1. 了解前端性能衡量指标、性能监控要点，掌握一种前端性能监控方案 [前端性能监控方案](https://www.cnblogs.com/dayiran1222/p/8745846.html#_label2)
 
-2. 了解常见的Web、App性能优化方案
+2. 了解常见的Web、App性能优化方案 [性能优化方案](https://blog.csdn.net/wyc2000sgz/article/details/80392623)
 
 3. SEO排名规则、SEO优化方案、前后端分离的SEO
 
 4. SSR实现方案、优缺点、及其性能优化
 
-5. Webpack的性能优化方案 *
+5. Webpack的性能优化方案 * [优化方案](https://www.jianshu.com/p/809958a504b8)
 
 6. Canvas性能优化方案
 
-7. React、Vue等框架使用性能优化方案 *
+7. React、Vue等框架使用性能优化方案 * [性能优化方案](https://www.cnblogs.com/afterwawa/p/9439547.html)
 
 ## 前端安全 **
 
-1. XSS攻击的原理、分类、具体案例，前端如何防御
+1. XSS攻击的原理、分类、具体案例，前端如何防御 [XSS攻击的原理、分类、具体案例](https://blog.csdn.net/qq_37931597/article/details/87967580)
 
 2. CSRF攻击的原理、具体案例，前端如何防御 `不让第三方网站访问到用户 Cookie samesite httponly 在请求中加hash值`
 
-3. HTTP劫持、页面劫持的原理、防御措施
+3. HTTP劫持、页面劫持的原理、防御措施 [防御措施](https://blog.51cto.com/fengwan/1875011)
