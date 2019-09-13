@@ -317,18 +317,11 @@ Class MyPromise{
   }
 }
 
- static all(list){
-   return new MyProimse((res,rej)=>{
-      let values = []
-      let count = 0
-      for(let [i,p] of list){
-        this.resolve(p).then((value)=>{
-          values[i] = value
-          count ++
-          if(count > list.lenght) return res(values)
-        }, err => rej(err))
-      }
-    }
-   })
+ static finally(func){
+   return this.then(
+     res => Mypromise.resolve(cb()).then(()=>res),
+     rej => MyPromise.reject(cb()).then(() => {throw rej})
+   )
+  })
  }
 ```
