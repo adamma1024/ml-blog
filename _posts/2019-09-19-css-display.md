@@ -20,4 +20,28 @@ tags:
 }
 ```
 
-#### 
+#### max-width
+
+```css
+.block{
+  /* 可缩放，在移动设备上尤为重要 ie7+ */
+  max-width: 600px;
+  margin: 0 auto;
+}
+```
+
+#### box-sizing
+
+```css
+/* 这个属性可以改变 盒子模型  */
+
+.block-content-box{
+  /* 默认值 常规盒子模型 width = content */
+  box-sizing: content-box;
+}
+
+.block-border-box{
+  /* 默认值 常规盒子模型  width = padding + border + margin + content*/
+  box-sizing: border-box;
+}
+```
