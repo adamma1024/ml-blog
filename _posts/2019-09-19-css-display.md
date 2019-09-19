@@ -9,7 +9,7 @@ tags:
 
 ## css 布局重中之重
 
-### 块级元素
+### display
 #### margin: auto
 
 ```css
@@ -33,7 +33,7 @@ tags:
 #### box-sizing
 
 ```css
-/* 这个属性可以改变 盒子模型  */
+/* 这个属性可以改变 盒子模型 ie8+ */
 
 .block-content-box{
   /* 默认值 常规盒子模型 width = content */
@@ -45,3 +45,5 @@ tags:
   box-sizing: border-box;
 }
 ```
+
+### position
