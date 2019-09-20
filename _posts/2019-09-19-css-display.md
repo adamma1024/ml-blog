@@ -77,3 +77,38 @@ tags:
   column-gap: 1em;
 }
 ```
+
+### flex
+
+```css
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+}
+.first{
+  /* width = 600- 600*1 / (600*1+200*2) * (600+200-500) */
+  /* width = 600- 600 / 1000 * 500 * 300 */
+  /* width = 600 - 180 = 420px */
+  flex: 1 1 600px;
+}
+.second{
+  /* width = 500 - 420 = 80 */
+  flex: 1 2 200px;
+}
+```
+
+### position: sticky 粘性布局
+
+超过阈值前是 `相对布局relative`  超过阈值之后是 `固定布局fixed`  
+
+在 `viewport` 视口滚动到元素 `top` 距离小于 `10px` 之前，元素为`相对定位`。之后，元素将`固定`在与顶部距离 `10px` 的位置，直到 `viewport` 视口回滚到阈值以下  
+
+```css
+.spin{
+  display: sticky;
+  top: 10px;
+}
+```
