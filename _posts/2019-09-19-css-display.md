@@ -47,3 +47,33 @@ tags:
 ```
 
 ### position
+
+
+### @media screen 响应式布局
+
+```css
+@media screen and (min-widh:600px){
+  nav{
+    float: left;
+    width: 20%;
+  }
+  section{
+    margin-left:20%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li{
+    display: inline;
+  }
+}
+```
+
+### 文字多列
+
+```css
+.text{
+  /* ie9+ */
+  column-count: 3;
+  column-gap: 1em;
+}
+```
