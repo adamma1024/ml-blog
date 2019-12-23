@@ -77,8 +77,6 @@ console.log(j) //3
 
 ### 词法作用域
 
-词法作用域是 JavaScript 闭包特性的重要保证  
-
 词法作用域注重的是所谓的 Write-Time，即编程时的上下文，而动态作用域以及常见的 this 的用法，都是 Run-Time，即运行时上下文。词法作用域关注的是函数在何处被定义，而动态作用域关注的是函数在何处被调用。JavaScript 是典型的词法作用域的语言，即一个符号参照到语境中符号名字出现的地方，局部变量缺省有着词法作用域。此二者的对比可以参考如下这个例子：
 
 ```js
@@ -129,6 +127,16 @@ person.Hello() // Hello, I'm xiaoming
 person.dad.Hello() // Hello, I'm xiaoma
 ```
 
+```js
+function Hello () {
+  console.log(`Hello, I'm ${this.name}`)
+}
+
+Hello() // Hello, I'm undefined
+```
+
+因为点的左侧没有任何东西，我们也没有用 .call、.apply、.bind 或者 `new` 关键字，`JavaScript` 会默认 `this` 指向 `window` 对象
+
 ### 显式调用
 
 ```js
@@ -165,7 +173,7 @@ me.Hello() // Hello, I'm malin
 ```
 
 ```js
-function newObj(parent, ...args){
+function new(parent, ...args){
   var obj = new Object()
   obj.__proto__ = parent.prototype
   // 绑定this
@@ -173,18 +181,6 @@ function newObj(parent, ...args){
   return typeof ret === 'object' ? ret : obj
 }
 ```
-
-### window绑定
-
-```js
-function Hello () {
-  console.log(`Hello, I'm ${this.name}`)
-}
-
-Hello() // Hello, I'm undefined
-```
-
-因为点的左侧没有任何东西，我们也没有用 .call、.apply、.bind 或者 `new` 关键字，`JavaScript` 会默认 `this` 指向 `window` 对象
 
 ## 变量引用方式
 
@@ -206,6 +202,16 @@ Hello() // Hello, I'm undefined
 必须初始赋值
 暂时死区
 
-## es6
+## ECMAScript 6
 
-[ECMAScript 6 入门 -- 阮一峰](http://es6.ruanyifeng.com/)
+ECMAScript 6.0（简称 ES6）是 JavaScript 语言的下一代标准，已经在 2015 年 6 月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企业级开发语言
+
+在使用nvwa之前需要熟练掌握一下语法：  
+
+- let,const
+- class
+- Promise
+- find,filter,flat 等 数组扩展方法
+- Object.assign,Object.keys 等Object扩展方法
+
+推荐读物：[ECMAScript 6 入门 -- 阮一峰](http://es6.ruanyifeng.com/)

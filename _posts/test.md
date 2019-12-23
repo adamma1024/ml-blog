@@ -82,3 +82,10 @@ foo.sayName()
 参考资料
 
 [ECMAScript 6 入门 --箭头函数](http://es6.ruanyifeng.com/#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)
+
+使用ES6语法快速数组去重
+
+```js
+var arr = [1,1,1,4,4,5,2,1,7,6]
+arr = [...new Set(arr)]
+```
