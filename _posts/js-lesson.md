@@ -60,36 +60,12 @@ for(var i =1;i<4;i++){
 
 }
 console.log(i)
-
-function test() {
-    if (true) {
-        var a = 'js'
-    }
-    console.log(a)
-}
-test() // js
-```
-
-```js
-function test() {
-    if (true) {
-        let a = 'js'
-    }
-    console.log(a)
-}
-test() // ReferenceError
 ```
 
 ```js
 for (let i = 0; i <= 2; i++) {
 }
 console.log(i) // ReferenceError
-```
-
-```js
-for (var j = 0; j <= 2; j++) {
-}
-console.log(j) //3
 ```
 
 ### 词法作用域
@@ -185,7 +161,7 @@ class Person {
   }
 }
 
-const me = new User('malin', 24)
+const me = new Person('malin', 24)
 me.Hello() // Hello, I'm malin
 ```
 
