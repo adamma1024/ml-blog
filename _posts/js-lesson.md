@@ -5,10 +5,9 @@
 ### 全局作用域
 
 全局作用域贯穿整个`js`文档。一旦你声明了一个全局变量，那么你在任何地方都可以使用它，包括函数内部。事实上，`js`默认拥有一个全局对象`window`，声明一个全局变量，就是为`window`对象的同名属性赋值  
-函数内不使用 `var`，`let`，`const` 定义的变量默认定义为全局变量
 
 ```js
-var a = 1
+window.a = 1
 function test(){
   console.log(a)
   b = 2
@@ -29,20 +28,15 @@ console.log(b) //2
 // Global Scope
 function a() {
   var c = 1
-    // Local Scope #1
-    function a1() {
-      var d = 2
-        // Local Scope #2
-    }
+  // Local Scope #1
+  function a1() {
+    // Local Scope #2
+    var d = 2
+  }
   console.log(d)
 }
 a()            // ReferenceError
 console.log(c) // ReferenceError
-
-// Global Scope
-function b() {
-    // Local Scope #3
-}
 ```
 
 #### 块级作用域
@@ -61,6 +55,11 @@ function f(){
 }
  
 f(); // undefined
+
+for(var i =1;i<4;i++){
+
+}
+console.log(i)
 
 function test() {
     if (true) {
