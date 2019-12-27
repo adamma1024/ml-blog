@@ -43,7 +43,21 @@ function b() {
 
 #### 块级作用域
 
+块级作用域可以替代立即执行函数
+
 ```js
+// 问题
+var tmp = new Date();
+ 
+function f(){
+  console.log(tmp);
+  if(false){
+    var tmp = "hello";
+  }
+}
+ 
+f(); // undefined
+
 function test() {
     if (true) {
         var a = 'js'
