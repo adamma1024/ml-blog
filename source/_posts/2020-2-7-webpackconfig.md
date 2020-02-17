@@ -28,3 +28,71 @@ if(module.hot){
 babel 
 @babel/plugin-transform-runtime 闭包引入，但是无法按需引入
 polyfill会污染全局变量
+
+## webpack 优化
+
+### 缩小文件范围 
+
+- `exclude` `include` `test`
+- 推荐 `include`
+
+```js
+include:path.resovle(__dirname,"./src")
+```
+
+### resolve 属性
+
+```js
+// modules 指定 node_modules
+// alias 使用绝对路径
+// extensions 尽可能少
+resolve: {
+  modules: [path.resolve(__dirname, "node_modules")],
+  alias:{
+    react: path.resolve(__dirname,"./node_modules/react/umd/react.production.min.js")
+  }，
+  extensions: ['.js']
+}
+```
+
+### postcss-loader 转前缀
+
+### MiniCSSExtractPlugin
+
+分离css  并行下载  
+不能使用 style-loader 改成 minicssextractplugin.loader  
+style-loader 会把 css 注入 style 属性里面，所以要换
+
+### OptimizeCSSAssetsPlugin
+
+压缩css  
+use cssnano  
+
+### cross-env 传参数
+
+### css摇树
+
+`glob-all`, `purify-css`, `purifyCss-webpack`
+
+```js
+plugins:[
+  new PurifyCss({
+    paths: glob.sync([
+      // 需要对 html 也 tree shake
+      path.resolve(__dirname,"./src/*.html"),
+      path.resolve(__dirname,"./src/*.js")
+    ])
+  })
+]
+```
+
+### js摇树
+
+开发模式无效，方便调试
+```js
+// 生产模式自动开启
+// dev模式需要这个
+ optimization: {
+   usedExports: true
+ }
+```
