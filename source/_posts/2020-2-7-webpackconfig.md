@@ -1,4 +1,17 @@
-hash
+---
+layout:     post
+title:      "webpack知识点及如何优化"
+date:       2019-10-12 10点24分
+author:     "malin"
+header-style: text
+categories:
+  - 打包
+tags:
+    - webpack
+---
+
+## hash
+
 chunkhash  本身没变不会改
 contenthash  针对内容改变才会hash  多用于 css 文件打包名字 优化
 
@@ -6,7 +19,7 @@ contenthash  针对内容改变才会hash  多用于 css 文件打包名字 优�
 [name].[ext] //后缀
 ```
 
-devserver
+## devserver
 
 contentBase 把打包之后的放到内存中读取
 
@@ -25,7 +38,8 @@ if(module.hot){
 }
 ```
 
-babel 
+## babel 
+
 @babel/plugin-transform-runtime 闭包引入，但是无法按需引入
 polyfill会污染全局变量
 
