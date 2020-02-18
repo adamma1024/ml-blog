@@ -76,6 +76,22 @@ resolve: {
 分离css  并行下载  
 不能使用 style-loader 改成 minicssextractplugin.loader  
 style-loader 会把 css 注入 style 属性里面，所以要换
+```js
+const MiniCssExtractPlugin = require("mini-css-extract- plugin");
+{
+  test: /\.scss$/,
+  use: [
+    // "style-loader", // 不不再需要style-loader，⽤用
+    MiniCssExtractPlugin.loader代替 MiniCssExtractPlugin.loader,
+    "css-loader", // 编译css "postcss-loader", "sass-loader" // 编译scss
+  ] },
+  plugins: [
+      new MiniCssExtractPlugin({
+        filename: "css/[name]_[contenthash:6].css",
+        chunkFilename: "[id].css"
+      })
+  ]
+```
 
 ### OptimizeCSSAssetsPlugin
 
@@ -109,4 +125,33 @@ plugins:[
  optimization: {
    usedExports: true
  }
+```
+
+### sideEffects
+
+false 对所有 模块 （包括css模块）都进行摇树
+
+```js
+// package.json
+// false 是对 全模块 摇树
+// 数组是排除  某种类型文件
+sideEffects: [
+  "*.css",
+  "*.less"
+]
+```
+
+### splitChunks
+
+```js
+splitChunks:{
+  maxsize:0,  // 一般不设置
+  name: true, // 对cacheGroup中的name有影响
+  cacheGroups:{
+    react:{
+      test:/react|react-dom/,
+      name: "react"
+    }
+  }
+}
 ```
