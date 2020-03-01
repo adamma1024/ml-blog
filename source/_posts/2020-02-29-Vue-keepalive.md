@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 前端知识体系-Vue源码
-subtitle: 简写Vue -- Compile
+subtitle: Vue源码阅读 -- keep-alive
 author: "malin"
 header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 categories:
