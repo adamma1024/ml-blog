@@ -21,17 +21,17 @@ tags:
 
 3. 手写函数柯里化工具函数、并理解其应用场景和优势 *
 
-4. 手写防抖和节流工具函数、并理解其内部原理和应用场景 * [code1](/2019/09/07/mycode)
+4. 手写防抖和节流工具函数、并理解其内部原理和应用场景 * [code1](/2019/12/27/2019-09-07-mycode)
 
 5. 实现一个sleep函数 *
 
 ## 手动实现前端轮子
 
-1. 手动实现call、apply、bind * [code1](/2019/09/07/mycode)
+1. 手动实现call、apply、bind * [code1](/2019/12/27/2019-09-07-mycode)
 
-2. 手动实现符合Promise/A+规范的Promise、手动实现async await * [promise](/2019/08/31/es-promise)
+2. 手动实现符合Promise/A+规范的Promise、手动实现async await * [promise](/2019/12/27/2019-08-31-es-promise)
 
-3. 手写一个EventEmitter实现事件发布、订阅 * [code2](/2019/09/07/mycode2)
+3. 手写一个EventEmitter实现事件发布、订阅 * [code2](/2019/12/27/2019-09-07-mycode2)
 
 4. 可以说出两种实现双向绑定的方案、可以手动实现 *
 
