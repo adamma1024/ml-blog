@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nginx:
+    restart: always
+    image: nginx
+    ports:
+      - 8000:80
+    volumes:
+      - ./nginx/conf.d/:/etc/nginx/conf.d
+      - ./public:/var/www/html/

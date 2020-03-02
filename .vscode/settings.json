@@ -15,9 +15,9 @@
       }],
       "targets": [{
           "type": "sftp",
-          "name": "AliyunServer",
+          "name": "ml-blog",
           "dir": "/root/ml-blog",
-          "host": "http://114.55.254.51/",
+          "host": "114.55.254.51",
           "port": 22,
           "user": "root",
           "privateKey": "/Users/ma/.ssh/id_rsa"
