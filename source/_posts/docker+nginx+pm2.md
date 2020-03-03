@@ -142,7 +142,7 @@ Nginx 真正复杂的地方不在于安装，而是在于他的配置文件真�
 webhook 顾名思义，是 网络钩子。很容易就联想到了 Vue 生命函数钩子 和 EventEmitter ，两者都属于 发布-订阅 模式。webhook干的活也是一样的，github上的操作，从push到新建分支再到fork甚至是star，都是有对应的 Hook 的。  
 下面展示一下 webhook 配置页面：  
 
-![webhook](https://user-gold-cdn.xitu.io/2020/3/3/1709ff5e493a4896?w=1812&h=1686&f=png&s=420830)
+![webhook](/img/webhook.png)
 
 步骤：  
 
@@ -278,6 +278,6 @@ ok,大功告成这时候，将 autoDeploy.sh 后面的注释取消。git push
 - node webhook.js  (不想看日志的推荐用pm2守护进程运行)
 
 
-![结果](https://user-gold-cdn.xitu.io/2020/3/3/1709ff4841837489?w=1242&h=800&f=png&s=129595)
+![结果](/img/webhook_finish.png)
 
 欢迎大家讨论，整套流程我搞了整整一天，坑太多了。最后成功了还是很开心的。但是我的bolg不能用这个方法，因为blog是用的hexo，需要hexo server才能启动。大家如果有什么建议和问题，欢迎评论👏👏！

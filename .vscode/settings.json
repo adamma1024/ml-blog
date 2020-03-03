@@ -8,7 +8,8 @@
               "node_modules/**",
               ".git/**",
               ".vscode/**",
-              "**/node_modules/**"
+              "**/node_modules/**",
+              "**/.vscode/**"
           ],
           "deployOnSave": false
       }],
