@@ -6,8 +6,7 @@ header-bg-css: "linear-gradient(to right, #5cadff, #38ef7d);"
 categories:
   - React全家桶
 tags:
-  - redux
-  - redux-actions
+  - Redux
 ---
 
 使用了redux重构Vuex已经到了尾声，只剩下异步请求数据了，但是在这时我却发现了一个插件，叫做redux-actions！<br/>

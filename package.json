@@ -29,6 +29,7 @@
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "github-webhook-handler": "^1.0.0"
+    "github-webhook-handler": "^1.0.0",
+    "hexo-generator-json-content": "^4.1.6"
   }
 }

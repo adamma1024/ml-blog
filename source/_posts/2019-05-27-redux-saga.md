@@ -6,8 +6,7 @@ header-style: text
 categories:
   - React全家桶
 tags:
-  - redux-saga
-  - redux-thunk
+  - Redux
 ---
 
 > 借鉴了[这篇文章](https://blog.csdn.net/wj610671226/article/details/82730051)
