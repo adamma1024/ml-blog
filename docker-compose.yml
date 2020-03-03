@@ -1,10 +1,16 @@
 version: '2'
 services:
+  ml-blog:
+    container_name: ml-blog
+    #构建容器
+    build: .
+    ports:
+    - "4000:4000"
   nginx:
     restart: always
     image: nginx
     ports:
-      - 8000:80
+      - 80:80
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d
       - ./public:/var/www/html/
