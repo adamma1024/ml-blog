@@ -5,7 +5,7 @@ subtitle: 实现可移植，持续自动集成系统
 author: "malin"
 header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 categories:
-  - React
+  - 自动化部署
 tags:
   - 前端知识体系
 ---

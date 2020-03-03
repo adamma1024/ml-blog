@@ -1,6 +1,4 @@
 #!/bin/bash
-#deploy-dev.sh
-
 git pull
 
 # 强制重新编译容器
