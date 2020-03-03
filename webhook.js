@@ -2,7 +2,7 @@ const http = require('http')
 const createHandler = require('github-webhook-handler')
 
 const handler = createHandler({
-    path:'/docker_deploy',
+    path:'/ml-blog',
     secret:'malin258'
 })
 
@@ -22,8 +22,8 @@ http.createServer((req,res) => {
   handler(req,res,err => { res.statusCode = 404
     res.end('no such location')
   })
-}).listen(7777, () => {
-  console.log('Webhook listen at 7777')
+}).listen(8000, () => {
+  console.log('Webhook listen at 8000')
 })
 
 handler.on('error',err => {

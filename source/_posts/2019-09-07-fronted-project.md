@@ -15,21 +15,18 @@ tags:
 ## 项目构建
 
 1. 理解npm、yarn依赖包管理的原理，两者的区别
-
 2. 可以使用npm运行自定义脚本
-
 3. 理解Babel、ESLint、webpack等工具在项目中承担的作用 *
-
-4. ESLint规则检测原理，常用的ESLint配置 *  [常用的ESLint配置](https://www.jianshu.com/p/f2d42f9d244c)
-
-5. Babel的核心原理，可以自己编写一个Babel插件 ** [手撸插件](https://blog.csdn.net/weixin_34364071/article/details/88007887)
-
-6. 可以配置一种前端代码兼容方案，如Polyfill 
-
-7. Webpack的编译原理、构建流程、热更新原理，chunk、bundle和module的区别和应用 * [chunk、bundle和module的区别和应用](https://juejin.im/post/5d70ad50f265da03cf7aae91)
-
-8. 可熟练配置已有的loaders和plugins解决问题，可以自己编写loaders和plugins ** [编写loaders和plugins](https://juejin.im/post/5bbf190de51d450ea52fffd3)
-
+4. ESLint规则检测原理，常用的ESLint配置 *  
+[常用的ESLint配置](https://www.jianshu.com/p/f2d42f9d244c)  
+5. Babel的核心原理，可以自己编写一个Babel插件 **   
+[手撸插件](https://blog.csdn.net/weixin_34364071/article/details/88007887)  
+6. 可以配置一种前端代码兼容方案，如Polyfill
+7. Webpack的编译原理、构建流程、热更新原理，chunk、bundle和module的区别和应用 *  
+[chunk、bundle和module的区别和应用](https://juejin.im/post/5d70ad50f265da03cf7aae91)  
+8. 可熟练配置已有的loaders和plugins解决问题，可以自己编写loaders和plugins **   
+[编写loaders和plugins](https://juejin.im/post/5bbf190de51d450ea52fffd3)
+<!--more-->
 ## nginx
 
 1. 正向代理与反向代理的特点和实例

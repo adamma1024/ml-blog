@@ -1,3 +1,16 @@
+---
+layout: post
+title: 前端知识体系-React源码
+subtitle: Fiber+时间分片 解读
+author: "malin"
+header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
+categories:
+  - React
+tags:
+  - 前端知识体系
+---
+
+<!--more-->
 ## fiber
 
 将 虚拟dom树 转成 单向链表

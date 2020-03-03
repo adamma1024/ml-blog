@@ -25,6 +25,7 @@ tags:
 
 5. 实现一个sleep函数 *
 
+<!--more-->
 ## 手动实现前端轮子
 
 1. 手动实现call、apply、bind * [code1](/2019/12/27/2019-09-07-mycode)

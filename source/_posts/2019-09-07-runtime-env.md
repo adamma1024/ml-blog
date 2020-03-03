@@ -28,6 +28,7 @@ tags:
 8. 浏览器提供的几种存储机制、优缺点、开发中正确的选择 *  `cookie 4K 请求传递 localStorage 永久存储 sessionStorage 关闭页签清空 IndexedDB`
 9. 浏览器跨标签通信 * `websocket localstorage SharedWorker 同源的`
 
+<!--more-->
 ## 浏览器原理 *
 
 1. 各浏览器使用的JavaScript引擎以及它们的异同点、如何在代码中进行区分 `navigator.userAgent`

@@ -29,6 +29,7 @@ tags:
 有着经济头脑的男主收揽了各种`“奇人异士”`，马戏院一炮而红。随着成功的到来，`舆论风波`和`新的机遇`接踵而至。  
 男主能否处理好一切，亦或迷失初心，还请自己去电影中寻找。 只能剧透到这了233333🤣   
 
+<!--more-->
 ## 🔥 人物
 ---
 
@@ -73,5 +74,4 @@ tags:
 
 > You know I want you It's not a secret I try to hide But I can't have you We're bound to break and My hands are tied  
 > 你知道我对你的渴望，我从未对此隐藏过。但我不能拥有你，我们注定要分开-- Rewrite The Stars  
-> Everyone's life is one of the greatest shows ! -- 我说滴，所以用力的活着吧   
-> - 我知道他们爱的价值已经超越了生死，如钻石一般纯粹无暇，如山间泉水一样清澈见底，正如——我的孤独 -- flo  
+> Everyone's life is one of the greatest shows ! -- 我说滴，所以用力的活着吧    

@@ -18,6 +18,7 @@ tags:
 - 下载node官网的包-解压-修改环境变量
 - 使用apt-get直接安装
 
+<!--more-->
 ## 第一种
 
 > 过程比较麻烦不作为重点讲解，丢个[链接](https://www.bilibili.com/video/av62585155?from=search&seid=10466364756648314194)自己瞅瞅吧  

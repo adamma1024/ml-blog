@@ -14,6 +14,8 @@ tags:
 抱怨归抱怨，赶紧来看看这东西到底怎么个好法，然后乖乖重写吧<br/>
 先说一点，在比较大的项目中actions比较多。**极力推荐** `createActions + handleActions` 的写法
 
+<!--more-->
+
 # createAction 和 createActions
 - **createAction**
  - createAction(type)

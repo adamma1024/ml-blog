@@ -22,6 +22,7 @@ tags:
 }
 ```
 
+<!--more-->
 #### max-width
 
 ```css

@@ -17,6 +17,7 @@ arr.reduce((p,x)=>{
 },Promise.resolve())
 ```
 
+<!--more-->
 ### 使用Promise实现红绿灯交替重复亮
 
 ```js

@@ -11,6 +11,7 @@ console.log(window.a)
 console.log(window.b)
 ```
 
+<!--more-->
 ```js
 // 知识点:
 // 1.变量提升和函数提升

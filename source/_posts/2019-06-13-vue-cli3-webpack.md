@@ -25,6 +25,8 @@ tags:
 
 Vue-cli集成了大量的webpack配置，直接配置好了<code>loader</code>，<code>babel</code>甚至<code>eslint</code>,对于开发来说，你可以直接写代码然后运行一行
 
+<!--more-->
+
 ```node
 npm run serve
 ```

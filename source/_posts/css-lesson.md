@@ -11,6 +11,8 @@
 - transition
 - animation
 
+<!--more-->
+
 ## 盒模型
 
 box-sizing: content-box（default），border-box，padding-box

@@ -15,6 +15,7 @@ tags:
 
 <code>redux-thunk</code>可以使原本只能返回对象的原生redux 的<code>action</code>，变得可以返回<code>promise</code>。
 
+<!--more-->
 ```javascript
 //action
 import axios from 'axios'

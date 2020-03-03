@@ -24,6 +24,7 @@ Class MyPromise {
 }
 ```
 
+<!--more-->
 ## 定义状态，修改状态
 
 ```js

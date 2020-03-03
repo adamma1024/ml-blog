@@ -26,6 +26,7 @@ tags:
 4. 前台捕获不到这个404
 5. 设置了route <code>children</code> 也会出现404，原本的静态资源找不到了 (未验证)
 
+<!--more-->
 #### 解决方法
 
 1. mode改为<code>hash</code>（如果不愿意请看下一条😆😆😆）

@@ -14,6 +14,7 @@ tags:
 
 > `keep-alive`由于有单个js文件，所以源码跟踪挺简单的，本章会从源码解读`keep-alive`的实现
 
+<!--more-->
 ## keep-alive 是一个抽象组件
 
 源码位置： `Vue/src/core/components/keep-alive.js`  

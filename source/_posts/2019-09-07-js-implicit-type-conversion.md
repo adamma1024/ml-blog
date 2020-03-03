@@ -18,6 +18,7 @@ tags:
 - undefined 转 number NaN 转 boolean false
 - null 转 number 0 转 boolean false
 
+<!--more-->
 ## 特殊
 
 - 关系运算符两边都是字符时 比较第一位unicode编码 '2' > '10' true '2'.charCodeAt() > '10'.charCodeAt()

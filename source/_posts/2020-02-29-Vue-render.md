@@ -16,6 +16,7 @@ platforms/web/runtime/index.js Vue.prototype.$mount
 
 core/instance/lifecycle.js  mountComponent 定义
 
+<!--more-->
 ## globalApi & lifecycleMixin & Vue 构造函数
 
 core/instance/index.js Vue 构造函数(调 init) lifecycleMixin 调用

@@ -1,1 +1,0 @@
-[百度前端技术学院 -- 设计师学院](http://ife.baidu.com/mentor/detail/id/32)
