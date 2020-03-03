@@ -5,4 +5,4 @@ RUN npm config set registry https://registry.npm.taobao.org/ && \
     npm i && \
     npm run build
 #pm2在docker中使用命令为pm2-docker
-CMD ["pm2-docker", "npm", "--name","ml-blog","-- run server"]
+CMD ["pm2-docker", "npm -- run server"]
