@@ -1,0 +1,4 @@
+apps:
+  - script : npm run server
+      instances: 2
+      watch  : true
