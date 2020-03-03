@@ -1,6 +1,5 @@
 #!/bin/bash
 #deploy-dev.sh
-echo Deploy Project # 获取最新版代码
 
 git pull
 
