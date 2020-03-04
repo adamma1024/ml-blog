@@ -7,7 +7,7 @@ header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 categories:
   - 自动化部署
 tags:
-  - 前端知识体系
+  - Docker
 ---
 
 > 🐳`Docker` 跨平台移植 + `Nginx` 代理 + `webhook`自动监听git push  = 一行命令即可运行自动持续部署系统

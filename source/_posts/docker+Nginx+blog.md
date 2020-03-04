@@ -7,7 +7,7 @@ header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 categories:
   - 自动化部署
 tags:
-  - 前端知识体系
+  - Docker
 ---
 
 > 我的上一篇文章，记录了如何使用[Docker🐳+Nginx+WebHook+Node](/2020/03/04/docker+nginx+pm2)  
