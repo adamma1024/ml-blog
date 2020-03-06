@@ -14,7 +14,10 @@ tags:
 
 platforms/web/runtime/index.js Vue.prototype.$mount 
 
-core/instance/lifecycle.js  mountComponent 定义
+core/instance/lifecycle.js  
+
+mountComponent -> 定义 updateComponent -> new Watcher(vm, updateComponent)watcher.getter = updateComponent ->   
+-> get(){Dep.target = watcher;this.getter()}(watcher.addDep(dep) addDep(){addSub()})  
 
 <!--more-->
 ## globalApi & lifecycleMixin & Vue 构造函数
@@ -30,3 +33,4 @@ platforms/web/runtime/entry-runtime-with-compiler.js Vue.prototype.$mount 覆盖
 ## mountComponent 调用 执行渲染和更新
 
 new Vue -> _init -> $mount -> complier -> new Watcher -> render -> update
+
