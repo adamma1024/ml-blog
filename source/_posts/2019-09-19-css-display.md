@@ -115,3 +115,76 @@ tags:
   top: 10px;
 }
 ```
+
+### 圣杯布局
+
+```html
+<style>
+  .parent{
+    width:100%;
+    padding: 0 100px;
+    overflow: auto;
+  }
+  .middle{
+    float:left;
+    width:100%;
+  }
+  .left{
+    /* 上移一行 */
+    margin-left: -100%;
+    /* 填充左padding */
+    left: -100px;
+    float:left;
+    width:100px;
+  }
+  .right{
+    /* 两边有padding，所以已经到头了，margin-left使其上移 */
+    margin-left: -100px;
+    /* right100px 填充右padding */
+    right: -100px;
+    float:left;
+    width:100px;
+  }
+</style>
+<div class='parent'>
+  <div class='middle'>middle</div>
+  <div class='left'>left</div>
+  <div class='right'>right</div>
+</div>
+```
+
+### 双飞翼布局
+
+```html
+<style>
+  .parent{
+    width:100%;
+    float:left;
+  }
+  .middle{
+    width:100%;
+    /* 利用margin重叠 */
+    margin: 0 100px;
+    background: red;
+  }
+  .left{
+    /* 上移一行 */
+    margin-left: -100%;
+    float:left;
+    width:100px;
+    background: green;
+  }
+  .right{
+    /* 上移一行 */
+    margin-left: -100px;
+    float:left;
+    width:100px;
+    background: blue;
+  }
+</style>
+<div class="parent">
+  <div class='middle'>middle</div>
+</div>
+<div class='left'>left</div>
+<div class='right'>right</div>
+```
