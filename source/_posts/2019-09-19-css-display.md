@@ -162,7 +162,6 @@ tags:
     float:left;
   }
   .middle{
-    width:100%;
     /* 利用margin重叠 */
     margin: 0 100px;
     background: red;
