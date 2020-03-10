@@ -47,5 +47,23 @@ tags:
 1. 理解Node在应用程序中的作用，可以使用Node搭建前端运行环境、使用Node操作文件、操作数据库等等
 2. 掌握一种Node开发框架，如Express，Express和Koa的区别
 3. 熟练使用Node提供的API如Path、Http、Child Process等并理解其实现原理
-4. Node的底层运行原理、和浏览器的异同
+4. Node的eventloop、和浏览器的异同  
+```js
+// node 宏任务 I/O setTimeout setImmediate setInterval 代码
+// 微任务 mutationObserve Promise process.nextTick 
+// timer、pending callback、Idle/prepare、poll、check、close callback
+timer 过程中执行 setTimeout / setInterval 队列
+清空微任务队列
+pending callback 执行 网络/流/ I/O操作 的错误回调
+清空微任务队列
+prepare node内部操作  跳过
+清空微任务
+poll 轮询  执行I/O操作，在开始时先计算setTimeout那些宏任务的阀值，排个队。等执行完一个I/O和回调，就优先执行接近阀值的
+清空微任务
+check 执行setImmediate队列，也是宏任务但是执行时机是在poll之后，优先于setTimeout 所以Vue更新视图会将它放到setTimeout之前，他要执行更快一些
+清空微任务
+close callback 执行 socket.close回调
+
+nextTick 优先于其他微任务执行
+```
 5. Node事件驱动、非阻塞机制的实现原理
