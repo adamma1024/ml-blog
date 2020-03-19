@@ -6,11 +6,11 @@ services:
     #构建容器
     build: .
     ports:
-    - "4000:4000"
-  nginx:
-    restart: always
-    image: nginx
-    ports:
-      - 80:80
-    volumes:
-      - ./nginx/conf.d/:/etc/nginx/conf.d
+    - "80:4000"
+  # nginx:
+  #   restart: always
+  #   image: nginx
+  #   ports:
+  #     - 80:80
+  #   volumes:
+  #     - ./nginx/conf.d/:/etc/nginx/conf.d
