@@ -15,7 +15,6 @@
   "dependencies": {
     "github-webhook-handler": "^1.0.0",
     "hexo": "^4.0.0",
-    "hexo-blog-encrypt": "^3.0.12",
     "hexo-filter-github-emojis": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",

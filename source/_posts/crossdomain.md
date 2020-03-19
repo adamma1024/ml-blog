@@ -1,4 +1,14 @@
-# 网络 -- cookie / session / 跨域 
+---
+layout: post
+title: 网络 -- cookie / session / 跨域 
+subtitle: cookie / session / 跨域 
+author: "malin"
+header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
+categories:
+  - 网络
+tags:
+  - 前端知识体系
+---
 
 ## cookie
 
@@ -7,6 +17,7 @@
 - cookie为什么会自动加到request header中？
 - cookie怎么增删查改？
 
+<!--more-->
 ### cookie 是干什么的？
 
 - 通常用于身份认证

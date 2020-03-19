@@ -5,7 +5,8 @@ author: "malin"
 header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 tags:
   - 面试题
-password: malin258
+#   - secury
+# password: malin258
 ---
 
 > 问：  
@@ -16,6 +17,7 @@ password: malin258
 工作经历不突出，导致被面试官嫌弃？  ❌  
 前端学算法没用？❌  
 
+<!--more-->
 > 答：  
 说了那么多，就是你准备工作没做好 ✅
 

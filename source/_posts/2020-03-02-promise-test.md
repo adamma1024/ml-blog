@@ -1,3 +1,15 @@
+---
+layout: post
+title: Promise编程题
+subtitle: coding use Promise
+author: "malin"
+header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
+categories:
+  - 前端
+tags:
+  - 前端知识体系
+---
+
 ## Promise 手写面试题
 
 ### 使用Promise实现每隔1秒输出1,2,3

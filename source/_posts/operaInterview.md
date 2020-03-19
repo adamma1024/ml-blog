@@ -1,4 +1,14 @@
-
+---
+layout: post
+title: 前端编程题
+subtitle: coding 
+author: "malin"
+header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
+categories:
+  - 编程题
+tags:
+  - 前端知识体系
+---
 
 ## 转换驼峰
 
@@ -15,7 +25,7 @@ function(str){
 ```
 
 ## 红绿灯替换
-
+<!--more-->
 ```js
 function red(){console.log(red)}
 function green(){console.log(green)}
