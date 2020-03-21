@@ -1,4 +1,5 @@
 # 监听
+pm2 del ml-blog-hook
 pm2 start --name ml-blog-hook webhooks.js
 
 # 
