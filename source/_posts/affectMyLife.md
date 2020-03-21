@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我的价值观是如何塑造的
+title: 有些话是可以影响人的一生的
 subtitle: 杂谈
 author: "malin"
 header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
