@@ -4,6 +4,9 @@ git pull
 # 安装依赖
 cnpm i
 
+# 清空之前的资源
+npm run clean
+
 # 打包📦生成新静态资源
 npm run build
 
