@@ -7,6 +7,9 @@ cnpm i
 # 打包📦生成新静态资源
 npm run build
 
+# 删除之前的public
+rm -rf /usr/share/nginx/html/public
+
 # 复制 静态资源 到 /usr/share/nginx/html/ 下
 cp -r ./public/ /usr/share/nginx/html/
 
