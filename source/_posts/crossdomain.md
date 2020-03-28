@@ -16,6 +16,7 @@ tags:
 - cookie是怎么设置的？
 - cookie为什么会自动加到request header中？
 - cookie怎么增删查改？
+- samesite属性 chrome 80后的修改，None 所有的 samesite 和 crosssite 都可以发送cookie / Strict samesite发送cookie 跨域不行/ Lax 部分跨域可以 <a><link><form>
 
 <!--more-->
 ### cookie 是干什么的？
