@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 面试教程：非985+18线小厂，如何半年逆袭大厂？（附字节，快手，美团，京东等面经
+title: 面试教程：非985+18线小厂，如何半年逆袭大厂？（附字节，快手，美团，京东等面经）
 author: "malin"
 header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 tags:
@@ -19,8 +19,10 @@ tags:
 > 答：  
 准备工作没做好 ✅
 
-人生苦短，无梦难活。希望大家都可以找到自己梦想的工作！
-本文会从以下几点，帮你提高面试能力。
+人生苦短，无梦难活。希望大家都可以找到自己梦想的工作！  
+如果你是个面试高手，只想来看面试真题的，请直接移动到[我的面经](#mianjing)  
+
+本文会从以下几点，帮你`提高`面试能力。  
 
 - 简历修改
 - 知识体系
@@ -126,19 +128,19 @@ tags:
 5. 练习讨价还价能力，有了`offer`就可以练习和`HR`砍价了，他们的工作就是`压`你的价格，所以不要示弱，先报个`高价`再和他讨价还价，然后用你`理想价位`当作底线，如果你面试过程中`表现的不错`，那么`大概率`他会接受。并且确实把价位`压下来`了，他也会觉得他`成功`了，你也拿到了你想要的价格💰
 6. 有了这些以后，你会更加有自信有底气，对，记住你就是一个毫无感情的`面试机器`！去投递你`心仪的目标`吧！
 
-我的面经：
+<span id = "mianjing">我的面经</span>：
 
-[字节跳动]()
-[快手]()
-[阿里]()
-[美团]()
-[京东]()
-[最右]()
-[知乎]()
-[Opera]()
-[搜狐]()
-[跟谁学]()
-[猿辅导]()
+[字节跳动](http://malin-life.com/2020/03/28/interview-bytedance/)
+[快手](http://malin-life.com/2020/03/28/interview-kuaishou/)
+[阿里](http://malin-life.com/2020/03/28/interview-alibaba/)
+[美团](http://malin-life.com/2020/03/28/interview-meituan/)
+[京东](http://malin-life.com/2020/03/28/interview-jd/)
+[最右](http://malin-life.com/2020/03/28/interview-zuiyou/)
+[知乎](http://malin-life.com/2020/03/28/interview-zhihu/)
+[Opera](http://malin-life.com/2020/03/28/interview-opera/)
+[搜狐](http://malin-life.com/2020/03/28/interview-souhu/)
+[跟谁学](http://malin-life.com/2020/03/28/interview-gensheixue/)
+[猿辅导](http://malin-life.com/2020/03/28/interview-yuanfudao/)
 
 希望可以帮到大家
 
