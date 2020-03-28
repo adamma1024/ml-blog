@@ -10,6 +10,8 @@ tags:
   - css
 ---
 
+![transform](/img/post-bg-miui6.jpg)
+
 transform也太NB了8！
 
 1. transform 下 `z-index` 失效 (影响了`层叠上下文`)

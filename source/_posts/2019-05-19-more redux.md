@@ -11,6 +11,8 @@ tags:
     - React
 ---
 
+![redux](/img/redux.jpg)
+
 > 通过[初识Redux]()，我们已经知道了Redux的基本使用方法了，是时候深入一下了
 
 Redux主要的三大点：

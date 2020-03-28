@@ -11,6 +11,8 @@ tags:
     - vue-route
 ---
 
+![alibaba](/img/post-bg-alibaba.jpg)
+
 > 在使用vue-route的时候可能大家都遇到过这种那种坑，欢迎各位补充🤞🤞🤞
 
 ## 问题
