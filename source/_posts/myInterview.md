@@ -4,7 +4,7 @@ title: 面试教程：非985+18线小厂，如何半年逆袭大厂？（附字�
 author: "malin"
 header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 tags:
-  - 面试题
+  - 面试
 ---
 
 > 问：  
