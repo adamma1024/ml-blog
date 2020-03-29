@@ -7,7 +7,7 @@ tags:
   - 面试
 ---
 
-<img src="./img/dream-zhouxingchi.jpeg" width="30vw" alt="梦想和咸鱼"/>
+![梦想和咸鱼](/img/dream-zhouxingchi.jpeg)
 
 > 问：  
 面试紧张发挥失常😖？❌  
