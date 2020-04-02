@@ -155,15 +155,15 @@ tags:
 
 - [字节跳动](http://malin-life.com/2020/03/28/interview-bytedance/)
 - [快手](http://malin-life.com/2020/03/28/interview-kuaishou/)
-- [阿里](http://malin-life.com/2020/03/28/interview-alibaba/)
+- [阿里](http://malin-life.com/2020/03/28/interview-alibaba/)，面完二面入职字节了，主动终止流程了，太久了
 - [美团](http://malin-life.com/2020/03/28/interview-meituan/)
 - [京东](http://malin-life.com/2020/03/28/interview-jd/)
 - [最右](http://malin-life.com/2020/03/28/interview-zuiyou/)
-- [知乎](http://malin-life.com/2020/03/28/interview-zhihu/)
-- [Opera](http://malin-life.com/2020/03/28/interview-opera/)
+- [知乎](http://malin-life.com/2020/03/28/interview-zhihu/)，二面挂了
+- [Opera](http://malin-life.com/2020/03/28/interview-opera/)，二面挂了
 - [搜狐](http://malin-life.com/2020/03/28/interview-souhu/)
 - [跟谁学](http://malin-life.com/2020/03/28/interview-gensheixue/)
-- [猿辅导](http://malin-life.com/2020/03/28/interview-yuanfudao/)
+- [猿辅导](http://malin-life.com/2020/03/28/interview-yuanfudao/)，二面挂了
 
 希望可以帮到大家~
 
