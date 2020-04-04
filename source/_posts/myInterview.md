@@ -158,7 +158,7 @@ tags:
 - [快手](http://malin-life.com/2020/03/28/interview-kuaishou/)
 - [阿里](http://malin-life.com/2020/03/28/interview-alibaba/)，面完二面入职字节了，主动终止流程了，太久了
 - [美团](http://malin-life.com/2020/03/28/interview-meituan/)
-- [京东](http://malin-life.com/2020/03/28/interview-jd/)
+- [京东](http://malin-life.com/2020/04/02/interview-jd/)
 - [最右](http://malin-life.com/2020/03/28/interview-zuiyou/)
 - [知乎](http://malin-life.com/2020/03/28/interview-zhihu/)，二面挂了
 - [Opera](http://malin-life.com/2020/03/28/interview-opera/)，二面挂了

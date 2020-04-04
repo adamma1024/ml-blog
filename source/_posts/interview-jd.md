@@ -43,10 +43,12 @@ tags:
 - `dns解析`
 - 浏览器缓存
 - 算法题 买卖股票的最佳时机 `leetcode 121题`
+
 ```js
 // 算法不要想着暴力法，说了相当于没说
 // 这道题用贪心很简单一次遍历就出来了，其实这题我见过，但我当时没做。面试官提醒了下
 // [7,1,5,4,6,3,2] 第二天买入 第五天卖出 res = 6 - 1 = 5
+
 var maxProfit = function(prices) {
     let res = 0
     let min = Number.MAX_VALUE
