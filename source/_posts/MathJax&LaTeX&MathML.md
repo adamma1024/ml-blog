@@ -25,7 +25,7 @@ tags:
 MathJax是适用于所有现代浏览器的LaTeX，[MathML](https://www.w3.org/TR/MathML3/)和[AsciiMath](http://asciimath.org/)表示法的开源JavaScript显示引擎。  
 优势：
 
-- 使用MathJax，数学是基于文本的，而不是基于图像的，因此它可用于搜索引擎，这意味着您的方程式可以被搜索。MathJax允许页面作者使用TeX和LaTeX表示法，MathML（以XML格式表示数学的万维网联盟标准）或 AsciiMath表示法来编写公式。MathJax可以生成多种格式的输出，包括具有CSS样式的HTML或可缩放矢量图形（SVG）图像。
+- 使用MathJax，数学是`基于文本`的，而不是基于图像的，因此它可用于`搜索引擎`，这意味着您的方程式可以被搜索。MathJax允许页面作者使用TeX和LaTeX表示法，MathML（以XML格式表示数学的万维网联盟标准）或 AsciiMath表示法来编写公式。MathJax可以生成多种格式的输出，包括具有CSS样式的HTML或可缩放矢量图形（SVG）图像。
 
 - MathJax是模块化的，因此它只能在必要时加载组件，并且可以根据需要扩展为包括新功能。MathJax是高度可配置的，允许作者根据其网站的特殊要求对其进行自定义。与MathJax的早期版本不同，版本3可以打包到一个文件中，也可以作为较大捆绑包的一部分包含在那些以这种方式管理其javascript资产的网站中。
 
