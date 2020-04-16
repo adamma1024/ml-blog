@@ -74,6 +74,74 @@ getDerivedStateFromProps(props, state)(){
 
 // 在更新前打快照，常用与更新前获取组件的DOM信息
 getSnapshotBeforeUpdate(prevProps, prevState){
+  return null //没啥用
+}
+```
 
+## Redux
+
+### store
+
+- dispatch(action, value)
+- subscript
+- getState
+- replaceReducer
+- Symbol(observable)
+
+### action
+
+### reducer
+
+### combineReducers
+
+### applyMiddleware
+
+```js
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
+
+// 先执行thunk，再执行logger
+applyMiddleware(thunk, logger)
+```
+
+## react-redux
+
+### Provider
+
+### connect
+
+```js
+import { connect } from 'react-redux'
+class Test extends React.Component{
+  render(){
+    //! 注意是 counter 不是 state
+    const { counter, add, dispatch, minus } = this.props
+    console.log(this.props) // 多了个dispatch
+  }
+}
+export default connect(
+  //mapStateToProps redux的state 做一个merge
+  state => ({counter: state.counter})
+  //mapDispatchToProps redux 的 actions
+  {
+    add: () => ({type: 'add'}),
+    minus: () => dispatch => {
+      return dispatch({type: 'minus'}, 2)
+    },
+  }
+)(Test)
+```
+
+## 源码
+
+- createElement
+- cloneElement
+
+```js
+createElement(domType, props, updater){
+  this.data = {}
+  this.type = domType
+  this.props = { ...props }
+  this.updater = updater
 }
 ```
