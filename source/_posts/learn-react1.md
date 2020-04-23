@@ -138,10 +138,13 @@ export default connect(
 - cloneElement
 
 ```js
-createElement(domType, props, updater){
+createElement(domType, config, children){
   this.data = {}
   this.type = domType
-  this.props = { ...props }
+  this.props = { ...config }
+  this.props.children = children
   this.updater = updater
 }
 ```
+
+高阶组件用函数式组件
