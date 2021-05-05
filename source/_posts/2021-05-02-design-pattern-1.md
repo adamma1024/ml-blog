@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 重学设计模式--SOLID 原则
-subtitle: 设计模式五原则
+title: 重学设计模式(一)--创造型设计模式
+subtitle: 工厂、抽象工厂、builder、原型、单例
 author: "malin"
 header-bg-css: "linear-gradient(to right, #5cadff, #09EF46);"
 categories:
@@ -243,3 +243,11 @@ director.builder.buildWindow(myHouse);
 2. Concert Builders 奢华型建造者、经济型建造者
 3. Director 主管
 4. Products 窗户、门
+
+## Prototype
+
+原型不太想写, 和原型链差不多
+
+## Singleton
+
+单例大家都很熟悉了, js 中大多数不需要考虑多线程情况, 所以直接懒汉模式(用的时候 new) 即可
